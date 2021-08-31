@@ -1,7 +1,7 @@
 import * as echarts from '../../ec-canvas/echarts';
+import ancestors from '../../data/ancestors';
 
-const app = getApp();
-
+// const app = getApp();
 function initChart(canvas, width, height, dpr) {
   const chart = echarts.init(canvas, null, {
     width: width,
@@ -9,174 +9,51 @@ function initChart(canvas, width, height, dpr) {
     devicePixelRatio: dpr // new
   });
   canvas.setChart(chart);
-  var data1 = {
-    name: 'root',
-    children: [
-      {
-        name: '申贤慧',
-        children: [
-          {
-            name: '申贤慧1'
-          },
-          {
-            name: '申贤慧2'
-          },
-          {
-            name: '申贤慧3'
-          },
-          {
-            name: '申贤慧4'
-          },
-          {
-            name: '申贤慧5'
-          },
-          {
-            name: '申贤慧6'
-          },
-          {
-            name: '申贤慧7'
-          },
-          {
-            name: '申贤慧8'
-          },
-          {
-            name: '申贤慧9'
-          },
-          {
-            name: '申贤慧10'
-          },
-          {
-            name: '申贤慧11'
-          },
-          {
-            name: '申贤慧12'
-          },
-          {
-            name: '申贤慧13'
-          },
-          {
-            name: '申贤慧14'
-          },
-          {
-            name: '申贤慧15'
-          },
-          {
-            name: '申贤慧16'
-          },
-          {
-            name: '申贤慧'
-          },
-          {
-            name: '申贤慧'
-          },
-          {
-            name: '申贤慧'
-          },
-          {
-            name: '申贤慧'
-          },
-          {
-            name: '申贤慧'
-          },
-          {
-            name: '申贤慧'
-          },
-          {
-            name: '申贤慧'
-          },
-          {
-            name: '申贤慧'
-          },
-          {
-            name: '申贤慧'
-          },
-          {
-            name: '申贤慧'
-          },
-          {
-            name: '申贤慧'
-          },
-          {
-            name: '申贤慧'
-          },
-          {
-            name: '申贤慧'
-          },
-          {
-            name: '申贤慧'
-          },
-          {
-            name: '申贤慧'
-          },
-          {
-            name: '申贤慧'
-          }
-        ]
-      },
-      {
-        name: 'b',
-        children: [
-          {
-            name: 'b1'
-          },
-          {
-            name: 'b2'
-          },
-          {
-            name: 'b3'
-          },
-          {
-            name: 'b4'
-          }
-        ]
-      },
-      {
-        name: 'c',
-        children: [
-          {
-            name: 'c1'
-          }
-        ]
-      },
-      {
-        name: 'd',
-        children: [
-          {
-            name: 'd1'
-          }
-        ]
-      }
-    ]
-  };
 
   var option = {
     calculable: false,
+    tooltip: {
+      show: true,
+      confine: true,
+      formatter: data => {
+        return data.data.info || '';
+      }
+    },
+    dataZoom: [
+      {
+        type: 'inside'
+      }
+    ],
     series: [
       {
         name: '族谱图',
         type: 'tree',
         orient: 'horizontal', // vertical horizontal
+        left: '20%',
+        right: '-150%',
+        top: '-120%',
+        bottom: '-200%',
         rootLocation: {
-          x: '50%',
+          x: 'center',
           y: '15%'
         }, // 根节点位置  {x: 'center',y: 10}
-        nodePadding: 20,
-        layerPadding: 40,
         symbol: 'rect',
-        symbolSize: [50, 20],
+        symbolSize: [60, 25],
         roam: true,
+        expandAndCollapse: false,
         initialTreeDepth: -1, // 展开层级
+        edgeShape: 'polyline',
         itemStyle: {
           normal: {
             color: '#3496eb', //节点背景色
-            borderColor: '#3496eb',
-            borderWidth: 0.5,
+            // borderColor: '#3496eb',
+            // borderWidth: 0.5,
             label: {
               show: true,
               position: 'inside',
               textStyle: {
-                color: '#ffffff',
-                fontSize: 13
+                color: '#fff',
+                fontSize: 14
               }
             },
             lineStyle: {
@@ -187,7 +64,7 @@ function initChart(canvas, width, height, dpr) {
             }
           }
         },
-        data: [data1]
+        data: [ancestors]
       }
     ]
   };
