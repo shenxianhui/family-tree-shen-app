@@ -7,7 +7,7 @@
  */
 Page({
   data: {
-    text: 'This is page data.'
+    active: '1'
   },
   // 页面创建时执行
   onLoad(options) {},
@@ -19,20 +19,10 @@ Page({
   onHide() {},
   // 页面销毁时执行
   onUnload() {},
-  // 触发下拉刷新时执行
-  onPullDownRefresh() {},
-  // 页面触底时执行
-  onReachBottom() {},
-  // 页面被用户分享时执行
-  onShareAppMessage() {},
-  // 页面滚动时执行
-  onPageScroll() {},
-  // 页面尺寸变化时执行
-  onResize() {},
-  // tab 点击时执行
-  onTabItemTap(item) {
-    console.log(item.index);
-    console.log(item.pagePath);
-    console.log(item.text);
+
+  changeTab(evt) {
+    this.setData({
+      active: evt.detail.name
+    });
   }
 });

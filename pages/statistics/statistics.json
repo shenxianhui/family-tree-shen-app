@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "quantity": "./components/quantity/quantity",
+    "distribute": "./components/distribute/distribute"
+  }
 }
