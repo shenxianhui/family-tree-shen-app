@@ -28,8 +28,11 @@ Page({
   onTabItemTap(item) {
     let obj = Object.assign(ancestors, {
       generation: '一世',
+      class: 1,
       children: this.setList(ancestors.children, 2)
     });
+
+    // console.log(JSON.stringify(obj));
   },
 
   setList(arr, num) {
@@ -101,6 +104,7 @@ Page({
       tmp = arr.map(item => {
         return Object.assign(item, {
           generation,
+          class: num,
           children: this.setList(item.children, num + 1)
         });
       });

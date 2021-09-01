@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2021-09-01 14:13:16
+ * @LastEditTime: 2021-09-01 14:59:33
  * @Description: 树形图
  */
 import * as echarts from '../../../../ec-canvas/echarts';
@@ -83,7 +83,7 @@ function setAncestors(list) {
 
   if (list && list.length) {
     tmp = list.map(item => {
-      return Object.assign(item, {
+      return Object.assign({}, item, {
         itemStyle: {
           color: item.star ? '#f56949' : '#3496eb'
         },

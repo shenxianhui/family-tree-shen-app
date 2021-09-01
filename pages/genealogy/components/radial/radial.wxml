@@ -1,5 +1,4 @@
 <!-- 散点图 -->
 <view class="radial">
-  123
   <ec-canvas id="mychart-dom-area" canvas-id="mychart-area" ec="{{ ec }}"></ec-canvas>
 </view>
