@@ -25,20 +25,16 @@ const data = {
                         {
                           name: '麟会',
                           info: '麟会配刘氏',
-                          children: [],
-                          generation: '七世'
+                          children: []
                         }
-                      ],
-                      generation: '六世'
+                      ]
                     },
                     {
                       name: '长友学',
                       info: '长友学出嗣',
-                      children: [],
-                      generation: '六世'
+                      children: []
                     }
-                  ],
-                  generation: '五世'
+                  ]
                 },
                 {
                   name: '天荣',
@@ -47,17 +43,13 @@ const data = {
                     {
                       name: '友学',
                       info: '嗣子友学字效先配刘氏',
-                      children: [],
-                      generation: '六世'
+                      children: []
                     }
-                  ],
-                  generation: '五世'
+                  ]
                 }
-              ],
-              generation: '四世'
+              ]
             }
-          ],
-          generation: '三世'
+          ]
         },
         {
           name: '杰',
@@ -78,8 +70,7 @@ const data = {
                         {
                           name: '蓝璧',
                           info: '七世四蓝璧字种玉配李氏',
-                          children: [],
-                          generation: '七世'
+                          children: []
                         },
                         {
                           name: '瑚璧',
@@ -104,29 +95,23 @@ const data = {
                                             {
                                               name: '怀波',
                                               info: '十二世三怀波',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             },
                                             {
                                               name: '怀远',
                                               info: '十二世次怀远',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             },
                                             {
                                               name: '怀绝',
                                               info: '十二世长怀绝',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 },
                                 {
                                   name: '培显',
@@ -147,23 +132,19 @@ const data = {
                                                 {
                                                   name: '耀恭',
                                                   info: '三耀恭字子敬配刘韩氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀顺',
                                                   info: '次耀顺配王氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀子',
                                                   info: '长耀子配刘氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀基',
@@ -172,23 +153,19 @@ const data = {
                                                 {
                                                   name: '耀兴',
                                                   info: '三耀兴配务头冯氏雪梅',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀生',
                                                   info: '次耀生配任二庄刘氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀才',
                                                   info: '长耀才配丁庄王氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀有',
@@ -197,11 +174,9 @@ const data = {
                                                 {
                                                   name: '耀全',
                                                   info: '耀全配苇园王氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀心',
@@ -210,26 +185,21 @@ const data = {
                                                 {
                                                   name: '耀民',
                                                   info: '三耀民配王氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀玉',
                                                   info: '次耀玉配安氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '海玲',
                                                   info: '长海玲配范氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '希成',
@@ -243,36 +213,30 @@ const data = {
                                                   name: '耀龙',
                                                   info: '四耀龙配苏胡疃苏氏秀玲',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀振',
                                                   info: '三耀振配玉庄田氏秀云',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀怀',
                                                   info: '次耀怀配杜赵庄杜氏玉莲',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀珠',
                                                   info: '长耀珠',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀立',
                                               info: '十二世次怀立配桑阿镇崔氏',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             },
                                             {
                                               name: '怀东',
@@ -281,26 +245,21 @@ const data = {
                                                 {
                                                   name: '耀会',
                                                   info: '三耀会配王村程氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀孔',
                                                   info: '次耀孔配桑桥张氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀周',
                                                   info: '长耀周配程村刘氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '希才',
@@ -313,24 +272,20 @@ const data = {
                                                 {
                                                   name: '耀学',
                                                   info: '次耀学',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀鹤',
                                                   info: '长耀鹤配郭、田氏',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀居',
                                               info: '十二世六怀居配岳、董氏',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             },
                                             {
                                               name: '怀先',
@@ -339,11 +294,9 @@ const data = {
                                                 {
                                                   name: '耀常',
                                                   info: '耀常字法辰配岳庄岳公之女',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀钦',
@@ -352,17 +305,14 @@ const data = {
                                                 {
                                                   name: '耀信',
                                                   info: '次耀信配张、马氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀红',
                                                   info: '长耀红配刘、赵氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀忍',
@@ -371,17 +321,14 @@ const data = {
                                                 {
                                                   name: '耀雨',
                                                   info: '次耀雨字 辰配（田王）氏生三子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀雪',
                                                   info: '长耀雪字玉良配谢氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀成',
@@ -390,23 +337,19 @@ const data = {
                                                 {
                                                   name: '耀安',
                                                   info: '三耀安配尹氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀图',
                                                   info: '次耀图字玉震配张氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '要祥',
                                                   info: '长要祥字玉声配朵庄李氏生二子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀松',
@@ -415,17 +358,13 @@ const data = {
                                                 {
                                                   name: '要贵',
                                                   info: '要贵配杨氏生三子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     },
                                     {
                                       name: '冠秀',
@@ -442,17 +381,14 @@ const data = {
                                                 {
                                                   name: '要善',
                                                   info: '次要善配陈贯庄张氏玉梅生二子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '要东',
                                                   info: '长要东',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀辰',
@@ -461,20 +397,16 @@ const data = {
                                                 {
                                                   name: '耀康',
                                                   info: '耀康',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '希轲',
                                           info: '十一世次希轲',
-                                          children: [],
-                                          generation: '十一世'
+                                          children: []
                                         },
                                         {
                                           name: '希章',
@@ -487,17 +419,14 @@ const data = {
                                                 {
                                                   name: '耀庭',
                                                   info: '次耀庭',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀唐',
                                                   info: '长耀唐',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀德',
@@ -506,23 +435,19 @@ const data = {
                                                 {
                                                   name: '耀俭',
                                                   info: '次耀俭',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀海',
                                                   info: '长耀海出嗣',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀聚',
                                               info: '十二世次怀聚配任氏',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             },
                                             {
                                               name: '怀龙',
@@ -531,20 +456,15 @@ const data = {
                                                 {
                                                   name: '耀海',
                                                   info: '嗣子耀海配宋氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 },
                                 {
                                   name: '培闻',
@@ -553,11 +473,9 @@ const data = {
                                     {
                                       name: '冠用',
                                       info: '十世冠用配郑氏',
-                                      children: [],
-                                      generation: '十世'
+                                      children: []
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 },
                                 {
                                   name: '培允',
@@ -579,17 +497,14 @@ const data = {
                                                 {
                                                   name: '耀武',
                                                   info: '次耀武配王村成氏红梅',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀峰',
                                                   info: '长耀峰配岳氏玉霞',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀阁',
@@ -599,11 +514,9 @@ const data = {
                                                 {
                                                   name: '文利',
                                                   info: '文利配阳谷阿城刘秀英',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀会',
@@ -612,11 +525,9 @@ const data = {
                                                 {
                                                   name: '耀付',
                                                   info: '嗣子耀付配琛贯庄张氏巧玲',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀达',
@@ -625,11 +536,9 @@ const data = {
                                                 {
                                                   name: '耀庆',
                                                   info: '耀庆配杨胡疃杨氏怀连',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀英',
@@ -638,50 +547,39 @@ const data = {
                                                 {
                                                   name: '耀才',
                                                   info: '四耀才配相里刘氏景梅',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀付',
                                                   info: '三耀付出嗣',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀剑',
                                                   info: '次耀剑配苇园王氏贵先',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀芹',
                                                   info: '长耀芹配陈贯庄张氏秀芝',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 }
-                              ],
-                              generation: '八世'
+                              ]
                             }
-                          ],
-                          generation: '七世'
+                          ]
                         },
                         {
                           name: '朝璧',
                           info: '七世次朝璧出嗣',
-                          children: [],
-                          generation: '七世'
+                          children: []
                         },
                         {
                           name: '连璧',
@@ -690,8 +588,7 @@ const data = {
                             {
                               name: '次汝修',
                               info: '八世次汝修出嗣',
-                              children: [],
-                              generation: '八世'
+                              children: []
                             },
                             {
                               name: '汝洁',
@@ -716,23 +613,19 @@ const data = {
                                                 {
                                                   name: '树孔',
                                                   info: '三树孔',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '树荣',
                                                   info: '次树荣配梁氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '树增',
                                                   info: '长树增配东开岳氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀恩',
@@ -741,26 +634,21 @@ const data = {
                                                 {
                                                   name: '树林',
                                                   info: '三树林配白集西街杨氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '树山',
                                                   info: '次树山配朵庄郑氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '树奎',
                                                   info: '长树奎配王村韩氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '希太',
@@ -773,20 +661,15 @@ const data = {
                                                 {
                                                   name: '刘成',
                                                   info: '刘成',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 },
                                 {
                                   name: '培通',
@@ -799,8 +682,7 @@ const data = {
                                         {
                                           name: '希江',
                                           info: '十一世次希江配梁氏',
-                                          children: [],
-                                          generation: '十一世'
+                                          children: []
                                         },
                                         {
                                           name: '希河',
@@ -809,8 +691,7 @@ const data = {
                                             {
                                               name: '怀正',
                                               info: '十二世次怀正',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             },
                                             {
                                               name: '怀科',
@@ -820,30 +701,24 @@ const data = {
                                                   name: '耀军',
                                                   info: '三耀军新疆工作配陈吕庄陈氏贵芳',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀台',
                                                   info: '次耀台配贾六庄梁氏书勤',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀银',
                                                   info: '长耀银烈士',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     },
                                     {
                                       name: '冠书',
@@ -860,18 +735,15 @@ const data = {
                                                 {
                                                   name: '耀和',
                                                   info: '次耀和配殷氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀良',
                                                   info: '长耀良伤残军人',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀璧',
@@ -881,20 +753,16 @@ const data = {
                                                   name: '耀江',
                                                   info: '次耀江鹤壁工作配王氏之英',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀坦',
                                                   info: '长耀坦配五岔路安氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '次希',
@@ -907,38 +775,30 @@ const data = {
                                                 {
                                                   name: '耀生',
                                                   info: '次耀生配玉庄田氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀峰',
                                                   info: '长耀峰配务头冯氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '希勤',
                                           info: '十一世长希勤出嗣',
-                                          children: [],
-                                          generation: '十一世'
+                                          children: []
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     },
                                     {
                                       name: '冠和',
                                       info: '十世长冠和出嗣',
-                                      children: [],
-                                      generation: '十世'
+                                      children: []
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 },
                                 {
                                   name: '培树',
@@ -959,11 +819,9 @@ const data = {
                                                 {
                                                   name: '耀成',
                                                   info: '耀成配赵辛庄赵氏凤娥',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀殿',
@@ -972,20 +830,15 @@ const data = {
                                                 {
                                                   name: '凤元',
                                                   info: '凤元配五岔路安氏春',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 },
                                 {
                                   name: '培平',
@@ -998,8 +851,7 @@ const data = {
                                         {
                                           name: '希唐',
                                           info: '十一世次希唐配高氏',
-                                          children: [],
-                                          generation: '十一世'
+                                          children: []
                                         },
                                         {
                                           name: '希淮',
@@ -1012,32 +864,23 @@ const data = {
                                                 {
                                                   name: '耀争',
                                                   info: '耀争王家槐木元',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 }
-                              ],
-                              generation: '八世'
+                              ]
                             }
-                          ],
-                          generation: '七世'
+                          ]
                         }
-                      ],
-                      generation: '六世'
+                      ]
                     }
-                  ],
-                  generation: '五世'
+                  ]
                 },
                 {
                   name: '天库',
@@ -1046,8 +889,7 @@ const data = {
                     {
                       name: '次友文',
                       info: '六世次友文出嗣',
-                      children: [],
-                      generation: '六世'
+                      children: []
                     },
                     {
                       name: '友德',
@@ -1064,8 +906,7 @@ const data = {
                                 {
                                   name: '培深',
                                   info: '九世次培深配于氏',
-                                  children: [],
-                                  generation: '九世'
+                                  children: []
                                 },
                                 {
                                   name: '培周',
@@ -1082,14 +923,12 @@ const data = {
                                             {
                                               name: '致珍',
                                               info: '十二世三致珍出家',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             },
                                             {
                                               name: '怀高',
                                               info: '十二世次怀高',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             },
                                             {
                                               name: '怀起',
@@ -1098,32 +937,26 @@ const data = {
                                                 {
                                                   name: '耀波',
                                                   info: '三耀波配范家村王氏海存',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀堂',
                                                   info: '次耀堂',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀理',
                                                   info: '长耀理',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '希孝',
                                           info: '十一世四希孝',
-                                          children: [],
-                                          generation: '十一世'
+                                          children: []
                                         },
                                         {
                                           name: '希言',
@@ -1132,11 +965,9 @@ const data = {
                                             {
                                               name: '怀明',
                                               info: '十二世怀明',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '希方',
@@ -1145,11 +976,9 @@ const data = {
                                             {
                                               name: '怀曾',
                                               info: '十二世怀曾配梁氏',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '希维',
@@ -1158,41 +987,31 @@ const data = {
                                             {
                                               name: '怀皋',
                                               info: '十二世三怀皋',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             },
                                             {
                                               name: '怀香',
                                               info: '十二世次怀香配张氏',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             },
                                             {
                                               name: '怀邦',
                                               info: '十二世长怀邦',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 }
-                              ],
-                              generation: '八世'
+                              ]
                             }
-                          ],
-                          generation: '七世'
+                          ]
                         }
-                      ],
-                      generation: '六世'
+                      ]
                     }
-                  ],
-                  generation: '五世'
+                  ]
                 },
                 {
                   name: '天才',
@@ -1205,30 +1024,27 @@ const data = {
                         {
                           name: '朝璧',
                           info: '七世嗣子朝璧字殿玉配董氏',
-                          children: [],
-                          generation: '七世'
+                          children: []
                         }
-                      ],
-                      generation: '六世'
+                      ]
                     }
-                  ],
-                  generation: '五世'
+                  ]
                 }
-              ],
-              generation: '四世'
+              ]
             }
-          ],
-          generation: '三世'
+          ]
         },
         {
           name: '次俊',
           info: '三世次俊出嗣',
-          children: [],
-          generation: '三世'
+          children: []
         },
-        { name: '长英', info: '三世长英出嗣', children: [], generation: '三世' }
-      ],
-      generation: '二世'
+        {
+          name: '长英',
+          info: '三世长英出嗣',
+          children: []
+        }
+      ]
     },
     {
       name: '尽仁',
@@ -1245,8 +1061,7 @@ const data = {
                 {
                   name: '天佑',
                   info: '五世三天佑出嗣',
-                  children: [],
-                  generation: '五世'
+                  children: []
                 },
                 {
                   name: '天保',
@@ -1283,23 +1098,19 @@ const data = {
                                                 {
                                                   name: '耀国',
                                                   info: '三耀国配齐河焦庙郑氏金英',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀俊',
                                                   info: '次耀俊配东开张氏宝兰',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀之',
                                                   info: '长耀之配朵庄杨氏凤芝',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀录',
@@ -1310,32 +1121,27 @@ const data = {
                                                   name: '耀杰',
                                                   info: '四耀杰冠县冠宜春酒业有限责任公司配贾氏庆芳',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀进',
                                                   info: '三耀进齐河县绿丰种业有限责任公司配赵氏淑华',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀居',
                                                   info: '次耀居齐河县绿丰种业有限责任公司配庞氏素珍',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀清',
                                                   info: '长耀清北京市北水嘉伦水产有限责任公司配滕氏继明',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀鼎',
@@ -1344,34 +1150,28 @@ const data = {
                                                 {
                                                   name: '耀旺',
                                                   info: '四耀旺配王氏秀香',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀举',
                                                   info: '三耀举配吴氏书霞',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀芳',
                                                   info: '次耀芳保险公司工作配杨胡疃杨氏焕芝',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀朝',
                                                   info: '长耀朝冠县水利局工作配范家村董氏沫成',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '希仲',
@@ -1385,29 +1185,24 @@ const data = {
                                                   name: '耀强',
                                                   info: '四耀强本科廊坊市农业农村局正科-副团职干部配赵氏丽',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀刚',
                                                   info: '三耀刚配李氏石珍',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀显',
                                                   info: '次耀显',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀荣',
                                                   info: '长耀荣字春发配朵庄吴氏秀景',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀增',
@@ -1416,23 +1211,18 @@ const data = {
                                                 {
                                                   name: '怀增',
                                                   info: '十二世次怀增配王氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '耀为',
                                               info: '耀为配本村孟氏金莲',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     },
                                     {
                                       name: '冠行',
@@ -1445,8 +1235,7 @@ const data = {
                                             {
                                               name: '怀庆',
                                               info: '十二世四怀庆',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             },
                                             {
                                               name: '怀纯',
@@ -1456,11 +1245,9 @@ const data = {
                                                   name: '耀文',
                                                   info: '耀文配范家村赵氏秀兰',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀卢',
@@ -1469,31 +1256,26 @@ const data = {
                                                 {
                                                   name: '耀法',
                                                   info: '四耀法配江氏文仙',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀亮',
                                                   info: '三耀亮烈士配佘氏争女',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀明',
                                                   info: '次耀明南下干部配彭氏淑兰',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀泽',
                                                   info: '长耀泽配孙氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀彪',
@@ -1503,47 +1285,35 @@ const data = {
                                                   name: '耀柱',
                                                   info: '次耀柱冠县水利局副局长配大花园头刘氏秀荣冠县百货公司干部',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀元',
                                                   info: '长耀元配张货营郭氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 }
-                              ],
-                              generation: '八世'
+                              ]
                             }
-                          ],
-                          generation: '七世'
+                          ]
                         }
-                      ],
-                      generation: '六世'
+                      ]
                     }
-                  ],
-                  generation: '五世'
+                  ]
                 },
                 {
                   name: '长天福',
                   info: '长天福出嗣',
-                  children: [],
-                  generation: '五世'
+                  children: []
                 }
-              ],
-              generation: '四世'
+              ]
             },
             {
               name: '万程',
@@ -1564,11 +1334,9 @@ const data = {
                             {
                               name: '曰钦',
                               info: '八世曰钦',
-                              children: [],
-                              generation: '八世'
+                              children: []
                             }
-                          ],
-                          generation: '七世'
+                          ]
                         },
                         {
                           name: '麟聚',
@@ -1577,11 +1345,9 @@ const data = {
                             {
                               name: '曰敬',
                               info: '八世嗣子曰敬字盛际配于氏',
-                              children: [],
-                              generation: '八世'
+                              children: []
                             }
-                          ],
-                          generation: '七世'
+                          ]
                         },
                         {
                           name: '长麟瑞',
@@ -1590,26 +1356,21 @@ const data = {
                             {
                               name: '曰兰',
                               info: '八世三曰兰出嗣',
-                              children: [],
-                              generation: '八世'
+                              children: []
                             },
                             {
                               name: '次曰敬',
                               info: '八世次曰敬出嗣',
-                              children: [],
-                              generation: '八世'
+                              children: []
                             },
                             {
                               name: '长曰魁',
                               info: '八世长曰魁配程氏',
-                              children: [],
-                              generation: '八世'
+                              children: []
                             }
-                          ],
-                          generation: '七世'
+                          ]
                         }
-                      ],
-                      generation: '六世'
+                      ]
                     },
                     {
                       name: '友谅',
@@ -1618,8 +1379,7 @@ const data = {
                         {
                           name: '麟治',
                           info: '七世次麟治字??配杨氏',
-                          children: [],
-                          generation: '七世'
+                          children: []
                         },
                         {
                           name: '麟符',
@@ -1628,20 +1388,15 @@ const data = {
                             {
                               name: '曰芳',
                               info: '八世曰芳',
-                              children: [],
-                              generation: '八世'
+                              children: []
                             }
-                          ],
-                          generation: '七世'
+                          ]
                         }
-                      ],
-                      generation: '六世'
+                      ]
                     }
-                  ],
-                  generation: '五世'
+                  ]
                 }
-              ],
-              generation: '四世'
+              ]
             },
             {
               name: '万鹏',
@@ -1682,32 +1437,25 @@ const data = {
                                                 {
                                                   name: '耀河',
                                                   info: '三耀河配岳氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀安',
                                                   info: '次耀安',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀平',
                                                   info: '长耀平',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 },
                                 {
                                   name: '培基',
@@ -1716,20 +1464,16 @@ const data = {
                                     {
                                       name: '冠旅',
                                       info: '十世次冠旅出嗣',
-                                      children: [],
-                                      generation: '十世'
+                                      children: []
                                     },
                                     {
                                       name: '冠军',
                                       info: '十世长冠军',
-                                      children: [],
-                                      generation: '十世'
+                                      children: []
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 }
-                              ],
-                              generation: '八世'
+                              ]
                             },
                             {
                               name: '曰相',
@@ -1742,11 +1486,9 @@ const data = {
                                     {
                                       name: '树东',
                                       info: '十世嗣子树东',
-                                      children: [],
-                                      generation: '十世'
+                                      children: []
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 },
                                 {
                                   name: '培直',
@@ -1755,20 +1497,16 @@ const data = {
                                     {
                                       name: '树东',
                                       info: '十世次树东出嗣',
-                                      children: [],
-                                      generation: '十世'
+                                      children: []
                                     },
                                     {
                                       name: '桂东',
                                       info: '十世长桂东配崔氏',
-                                      children: [],
-                                      generation: '十世'
+                                      children: []
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 }
-                              ],
-                              generation: '八世'
+                              ]
                             },
                             {
                               name: '曰田',
@@ -1789,14 +1527,11 @@ const data = {
                                             {
                                               name: '仲岱',
                                               info: '十二世仲岱',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     },
                                     {
                                       name: '永贵',
@@ -1805,35 +1540,26 @@ const data = {
                                         {
                                           name: '鹤亭',
                                           info: '十一世次鹤亭',
-                                          children: [],
-                                          generation: '十一世'
+                                          children: []
                                         },
                                         {
                                           name: '魁亭',
                                           info: '十一世长魁亭',
-                                          children: [],
-                                          generation: '十一世'
+                                          children: []
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 }
-                              ],
-                              generation: '八世'
+                              ]
                             }
-                          ],
-                          generation: '七世'
+                          ]
                         }
-                      ],
-                      generation: '六世'
+                      ]
                     }
-                  ],
-                  generation: '五世'
+                  ]
                 }
-              ],
-              generation: '四世'
+              ]
             },
             {
               name: '万里',
@@ -1846,8 +1572,7 @@ const data = {
                     {
                       name: '次光月',
                       info: '六世次光月出嗣',
-                      children: [],
-                      generation: '六世'
+                      children: []
                     },
                     {
                       name: '友贤',
@@ -1868,8 +1593,7 @@ const data = {
                                     {
                                       name: '冠宾',
                                       info: '十世次冠宾',
-                                      children: [],
-                                      generation: '十世'
+                                      children: []
                                     },
                                     {
                                       name: '冠鲁',
@@ -1878,32 +1602,23 @@ const data = {
                                         {
                                           name: '方凌',
                                           info: '十一世方凌',
-                                          children: [],
-                                          generation: '十一世'
+                                          children: []
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 }
-                              ],
-                              generation: '八世'
+                              ]
                             }
-                          ],
-                          generation: '七世'
+                          ]
                         }
-                      ],
-                      generation: '六世'
+                      ]
                     }
-                  ],
-                  generation: '五世'
+                  ]
                 }
-              ],
-              generation: '四世'
+              ]
             }
-          ],
-          generation: '三世'
+          ]
         },
         {
           name: '英',
@@ -1940,29 +1655,21 @@ const data = {
                                         {
                                           name: '方全',
                                           info: '十一世方全',
-                                          children: [],
-                                          generation: '十一世'
+                                          children: []
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 }
-                              ],
-                              generation: '八世'
+                              ]
                             }
-                          ],
-                          generation: '七世'
+                          ]
                         }
-                      ],
-                      generation: '六世'
+                      ]
                     }
-                  ],
-                  generation: '五世'
+                  ]
                 }
-              ],
-              generation: '四世'
+              ]
             },
             {
               name: '云汉',
@@ -2003,29 +1710,24 @@ const data = {
                                                 {
                                                   name: '耀成',
                                                   info: '四耀成',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀光',
                                                   info: '三耀光配张氏生四子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀才',
                                                   info: '次耀才',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀霞',
                                                   info: '长耀霞配王氏生二子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀林',
@@ -2034,20 +1736,16 @@ const data = {
                                                 {
                                                   name: '耀乾',
                                                   info: '次耀乾配蒋氏生二子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀华',
                                                   info: '长耀华',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '希曾',
@@ -2060,17 +1758,14 @@ const data = {
                                                 {
                                                   name: '耀金',
                                                   info: '次耀金配张氏生三子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀璞',
                                                   info: '长耀璞配冯氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀玉',
@@ -2079,11 +1774,9 @@ const data = {
                                                 {
                                                   name: '耀柄',
                                                   info: '耀柄配陈家辛祝氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀礼',
@@ -2092,18 +1785,15 @@ const data = {
                                                 {
                                                   name: '耀辉',
                                                   info: '次耀辉配槐木园刘氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀先',
                                                   info: '长耀先字光楣邑文庠生配（梁于蔚）氏',
                                                   star: true,
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀亮',
@@ -2112,32 +1802,24 @@ const data = {
                                                 {
                                                   name: '耀坤',
                                                   info: '次耀坤配宋氏生二子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀彩',
                                                   info: '长耀彩配（刘赵）氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 }
-                              ],
-                              generation: '八世'
+                              ]
                             }
-                          ],
-                          generation: '七世'
+                          ]
                         },
                         {
                           name: '度宏',
@@ -2162,11 +1844,9 @@ const data = {
                                             {
                                               name: '怀珍',
                                               info: '十二世怀珍配孔氏',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '希孔',
@@ -2180,35 +1860,29 @@ const data = {
                                                 {
                                                   name: '耀瑄',
                                                   info: '五耀瑄配于氏生二子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀瑂',
                                                   info: '四耀瑂配任氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀瑢',
                                                   info: '三耀瑢',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀璋',
                                                   info: '次耀璋配冯氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀瑃',
                                                   info: '长耀瑃配于氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀堂',
@@ -2218,11 +1892,9 @@ const data = {
                                                 {
                                                   name: '耀麟',
                                                   info: '耀麟字振元配葛氏生一子二女、继程氏生三子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀正',
@@ -2231,11 +1903,9 @@ const data = {
                                                 {
                                                   name: '耀琇',
                                                   info: '耀琇出嗣',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀凤',
@@ -2244,17 +1914,13 @@ const data = {
                                                 {
                                                   name: '耀琇',
                                                   info: '嗣子耀琇字瑞庭配玉庄赵氏生五子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     },
                                     {
                                       name: '桂',
@@ -2271,14 +1937,11 @@ const data = {
                                                 {
                                                   name: '耀周',
                                                   info: '耀周（小张庄）配杨氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '希荣',
@@ -2291,11 +1954,9 @@ const data = {
                                                 {
                                                   name: '耀南',
                                                   info: '耀南',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀朋',
@@ -2304,20 +1965,16 @@ const data = {
                                                 {
                                                   name: '耀明',
                                                   info: '次耀明',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀景',
                                                   info: '长耀景配杨木庄闫氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '希孟',
@@ -2330,32 +1987,25 @@ const data = {
                                                 {
                                                   name: '耀山',
                                                   info: '三耀山配陈氏生二子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀川',
                                                   info: '次耀川配刘氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀亭',
                                                   info: '长耀亭',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 },
                                 {
                                   name: '培盛',
@@ -2376,14 +2026,11 @@ const data = {
                                                 {
                                                   name: '耀笃',
                                                   info: '耀笃',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '希禹',
@@ -2392,14 +2039,11 @@ const data = {
                                             {
                                               name: '怀忠',
                                               info: '十二世怀忠配程氏',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     },
                                     {
                                       name: '标',
@@ -2416,20 +2060,16 @@ const data = {
                                                 {
                                                   name: '耀岭',
                                                   info: '次耀岭',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀连',
                                                   info: '长耀连配刘氏生二子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '希尧',
@@ -2442,11 +2082,9 @@ const data = {
                                                 {
                                                   name: '耀凤',
                                                   info: '耀凤配冯氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀德',
@@ -2455,23 +2093,17 @@ const data = {
                                                 {
                                                   name: '耀南',
                                                   info: '耀南',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 }
-                              ],
-                              generation: '八世'
+                              ]
                             },
                             {
                               name: '彻',
@@ -2484,23 +2116,18 @@ const data = {
                                     {
                                       name: '冠仲',
                                       info: '十世冠仲字连捷配（陈于）氏',
-                                      children: [],
-                                      generation: '十世'
+                                      children: []
                                     },
                                     {
                                       name: '冠类',
                                       info: '十世冠类配梁氏',
-                                      children: [],
-                                      generation: '十世'
+                                      children: []
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 }
-                              ],
-                              generation: '八世'
+                              ]
                             }
-                          ],
-                          generation: '七世'
+                          ]
                         },
                         {
                           name: '度超',
@@ -2529,17 +2156,14 @@ const data = {
                                                 {
                                                   name: '耀敬',
                                                   info: '耀敬配丁庄郭氏凤英',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀发',
                                               info: '十二世四怀发配韩氏',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             },
                                             {
                                               name: '怀永',
@@ -2548,17 +2172,14 @@ const data = {
                                                 {
                                                   name: '耀成',
                                                   info: '耀成（丁庄）配侯氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀广',
                                               info: '十二世次怀广',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             },
                                             {
                                               name: '怀瑞',
@@ -2567,29 +2188,23 @@ const data = {
                                                 {
                                                   name: '耀起',
                                                   info: '次耀起配徐州王氏秀荣',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀太',
                                                   info: '长耀太在吉林',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     },
                                     {
                                       name: '国桥',
                                       info: '十世长国桥',
-                                      children: [],
-                                      generation: '十世'
+                                      children: []
                                     },
                                     {
                                       name: '国楷',
@@ -2598,14 +2213,11 @@ const data = {
                                         {
                                           name: '希雍',
                                           info: '十一世希雍出嗣',
-                                          children: [],
-                                          generation: '十一世'
+                                          children: []
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 },
                                 {
                                   name: '培柱',
@@ -2626,11 +2238,9 @@ const data = {
                                                 {
                                                   name: '耀昌',
                                                   info: '长耀昌',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀刚',
@@ -2639,20 +2249,15 @@ const data = {
                                                 {
                                                   name: '耀峰',
                                                   info: '耀峰',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 },
                                 {
                                   name: '培梁',
@@ -2670,14 +2275,12 @@ const data = {
                                             {
                                               name: '女适',
                                               info: '十二世次女适杨胡疃杨贡柚',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             },
                                             {
                                               name: '女适',
                                               info: '十二世长女适苏疃苏公',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             },
                                             {
                                               name: '怀贤',
@@ -2686,11 +2289,9 @@ const data = {
                                                 {
                                                   name: '耀清',
                                                   info: '耀清配李氏生二子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀圣',
@@ -2700,29 +2301,24 @@ const data = {
                                                 {
                                                   name: '女适',
                                                   info: '女适胡疃胡公为室',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀同',
                                                   info: '三耀同字波景配陈氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀烺',
                                                   info: '次耀烺字鉴明配孟氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀餐',
                                                   info: '长耀餐少亡',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             },
                                             {
                                               name: '怀书',
@@ -2731,14 +2327,11 @@ const data = {
                                                 {
                                                   name: '耀奎',
                                                   info: '耀奎配李氏生二子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '希思',
@@ -2748,8 +2341,7 @@ const data = {
                                             {
                                               name: '女适',
                                               info: '十二世一女适八里庄太学生李春芹为室',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             },
                                             {
                                               name: '怀珠',
@@ -2758,53 +2350,43 @@ const data = {
                                                 {
                                                   name: '耀桥',
                                                   info: '三耀桥配蒋氏生二子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀岐',
                                                   info: '二耀岐配任氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀岷',
                                                   info: '解氏生三子一耀岷',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '女适',
                                                   info: '一女适田庄辛公讳桂芳之次子讳云龙为室',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀岳',
                                                   info: '二子耀岳配（王郑）氏，元配生二子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '李春芹',
                                                   info: '张氏生二子一女、一子耀嵩字峻峰配（杨张）氏生三子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀德',
                                                   info: '原配生一子耀德字华亭配韩氏生二子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     },
                                     {
                                       name: '国杞',
@@ -2818,8 +2400,7 @@ const data = {
                                             {
                                               name: '女适',
                                               info: '十二世一女适开河头张公为室',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             },
                                             {
                                               name: '怀宝',
@@ -2828,44 +2409,36 @@ const data = {
                                                 {
                                                   name: '女适',
                                                   info: '三女适朵庄王公为室',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '女适',
                                                   info: '次女适胡疃苏公为室',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '女适',
                                                   info: '长女适大里村赵公讳钜典为室',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀庚',
                                                   info: '三耀庚',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀岚',
                                                   info: '次耀岚',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀斗',
                                                   info: '长耀斗字紫垣配冯氏',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '希闵',
@@ -2880,32 +2453,26 @@ const data = {
                                                 {
                                                   name: '女适',
                                                   info: '三女适冠喻公讳诚珍之长子廪生讳尊锴为室',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '女适',
                                                   info: '次女适大近村马公讳元良之长子讳云鹏为室',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '女适',
                                                   info: '三女长女适焦庄冯公讳士清之长子为室',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀斌',
                                                   info: '耀斌字宪之配（李张）氏各生二子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         },
                                         {
                                           name: '希颜',
@@ -2914,8 +2481,7 @@ const data = {
                                             {
                                               name: '怀智',
                                               info: '十二世次怀智出嗣',
-                                              children: [],
-                                              generation: '十二世'
+                                              children: []
                                             },
                                             {
                                               name: '怀诗',
@@ -2925,92 +2491,71 @@ const data = {
                                                 {
                                                   name: '在继',
                                                   info: '在继配梁家庄李公之女生三女',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '女适',
                                                   info: '女适陈贯庄徐公讳凤栖之次子为室',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀隋',
                                                   info: '三耀隋配侯氏生五子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀辰',
                                                   info: '次耀辰配刘氏生三子',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '耀宗',
                                                   info: '耀宗配（于岳）氏生四子继配杨氏生一子一女',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '女适',
                                                   info: '侧室生一女适十里铺王公为室',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '女适',
                                                   info: '次女适邢家庄马公为室',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 },
                                                 {
                                                   name: '女适',
                                                   info: '原配生二女长女适胡疃苏公武庠生讳耀远字明轩为室',
-                                                  children: [],
-                                                  generation: '十三世'
+                                                  children: []
                                                 }
-                                              ],
-                                              generation: '十二世'
+                                              ]
                                             }
-                                          ],
-                                          generation: '十一世'
+                                          ]
                                         }
-                                      ],
-                                      generation: '十世'
+                                      ]
                                     }
-                                  ],
-                                  generation: '九世'
+                                  ]
                                 },
                                 {
                                   name: '克缵',
                                   info: '八世克缵字绳武配高氏',
-                                  children: [],
-                                  generation: '九世'
+                                  children: []
                                 }
-                              ],
-                              generation: '八世'
+                              ]
                             }
-                          ],
-                          generation: '七世'
+                          ]
                         }
-                      ],
-                      generation: '六世'
+                      ]
                     }
-                  ],
-                  generation: '五世'
+                  ]
                 }
-              ],
-              generation: '四世'
+              ]
             }
-          ],
-          generation: '三世'
+          ]
         }
-      ],
-      generation: '二世'
+      ]
     }
-  ],
-  generation: '一世'
+  ]
 };
 
 export default data;
