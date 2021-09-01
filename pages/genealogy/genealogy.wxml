@@ -1,6 +1,6 @@
 <!-- 关系图 -->
 <view class="genealogy">
-  <van-tabs color="#3496eb" active="{{ active }}" bind:change="changeTab">
+  <van-tabs color="#f7b52c" active="{{ active }}" bind:change="changeTab">
     <van-tab title="树状图" name="1">
       <view class="wrap">
         <tree wx:if="{{ active == '1' }}"></tree>
