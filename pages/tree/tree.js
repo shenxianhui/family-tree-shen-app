@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2021-09-01 09:05:27
+ * @LastEditTime: 2021-09-01 11:13:16
  * @Description: 族谱
  */
 import * as echarts from '../../ec-canvas/echarts';
@@ -16,6 +16,8 @@ function initChart(canvas, width, height, dpr) {
     devicePixelRatio: dpr // new
   });
   canvas.setChart(chart);
+
+  let ancestorsData = setAncestors([ancestors]);
 
   var option = {
     calculable: false,
@@ -38,8 +40,8 @@ function initChart(canvas, width, height, dpr) {
         orient: 'horizontal', // vertical horizontal
         left: '20%',
         right: '-200%',
-        top: '-300%',
-        bottom: '-450%',
+        top: '-500%',
+        bottom: '-700%',
         rootLocation: {
           x: 'center',
           y: '15%'
@@ -67,13 +69,30 @@ function initChart(canvas, width, height, dpr) {
         itemStyle: {
           color: '#3496eb'
         },
-        data: [ancestors]
+        data: ancestorsData
       }
     ]
   };
 
   chart.setOption(option);
   return chart;
+}
+
+function setAncestors(list) {
+  let tmp = [];
+
+  if (list && list.length) {
+    tmp = list.map(item => {
+      return Object.assign(item, {
+        itemStyle: {
+          color: item.star ? '#f56949' : '#3496eb'
+        },
+        children: setAncestors(item.children)
+      });
+    });
+  }
+
+  return tmp;
 }
 
 Page({
