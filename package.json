@@ -1,0 +1,24 @@
+{
+  "name": "family-tree-shen",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".prettierrc.js",
+  "dependencies": {
+    "@vant/weapp": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shenxianhui/family-tree-shen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shenxianhui/family-tree-shen/issues"
+  },
+  "homepage": "https://github.com/shenxianhui/family-tree-shen#readme"
+}
