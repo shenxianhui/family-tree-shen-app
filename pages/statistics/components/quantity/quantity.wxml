@@ -1,2 +1,4 @@
 <!-- 数量 -->
-<view class="quantity">数量</view>
+<view class="quantity">
+  <ec-canvas id="mychart-dom-area" canvas-id="mychart-area" ec="{{ ec }}"></ec-canvas>
+</view>
