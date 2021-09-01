@@ -1,3 +1,10 @@
+/*
+ * @Author: shenxh
+ * @Date: 2021-08-31 09:46:10
+ * @LastEditors: shenxh
+ * @LastEditTime: 2021-09-01 09:05:27
+ * @Description: 族谱
+ */
 import * as echarts from '../../ec-canvas/echarts';
 import ancestors from '../../data/ancestors';
 
@@ -30,9 +37,9 @@ function initChart(canvas, width, height, dpr) {
         type: 'tree',
         orient: 'horizontal', // vertical horizontal
         left: '20%',
-        right: '-150%',
-        top: '-120%',
-        bottom: '-200%',
+        right: '-200%',
+        top: '-300%',
+        bottom: '-450%',
         rootLocation: {
           x: 'center',
           y: '15%'
@@ -43,26 +50,22 @@ function initChart(canvas, width, height, dpr) {
         expandAndCollapse: false,
         initialTreeDepth: -1, // 展开层级
         edgeShape: 'polyline',
-        itemStyle: {
-          normal: {
-            color: '#3496eb', //节点背景色
-            // borderColor: '#3496eb',
-            // borderWidth: 0.5,
-            label: {
-              show: true,
-              position: 'inside',
-              textStyle: {
-                color: '#fff',
-                fontSize: 14
-              }
-            },
-            lineStyle: {
-              color: '#3496eb',
-              curveness: 0.5,
-              width: 0.5,
-              type: 'solid' // 'curve'|'broken'|'solid'|'dotted'|'dashed'
-            }
+        label: {
+          show: true,
+          position: 'inside',
+          textStyle: {
+            color: '#fff',
+            fontSize: 14
           }
+        },
+        lineStyle: {
+          color: '#3496eb',
+          curveness: 0.5,
+          width: 0.5,
+          type: 'solid'
+        },
+        itemStyle: {
+          color: '#3496eb'
         },
         data: [ancestors]
       }

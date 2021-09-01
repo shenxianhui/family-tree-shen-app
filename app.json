@@ -1,10 +1,19 @@
 {
-  "pages": ["pages/tree/tree", "pages/fame/fame", "pages/news/news"],
+  "pages": [
+    "pages/tree/tree",
+    "pages/statistics/statistics",
+    "pages/fame/fame",
+    "pages/news/news"
+  ],
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/tree/tree",
         "text": "族谱"
+      },
+      {
+        "pagePath": "pages/statistics/statistics",
+        "text": "统计"
       },
       {
         "pagePath": "pages/fame/fame",
