@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/tree/tree",
+    "pages/genealogy/genealogy",
     "pages/statistics/statistics",
     "pages/fame/fame",
     "pages/news/news"
@@ -8,7 +8,7 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/tree/tree",
+        "pagePath": "pages/genealogy/genealogy",
         "text": "族谱"
       },
       {

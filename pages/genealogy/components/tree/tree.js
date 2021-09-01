@@ -2,11 +2,11 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2021-09-01 11:13:16
- * @Description: 族谱
+ * @LastEditTime: 2021-09-01 14:13:16
+ * @Description: 树形图
  */
-import * as echarts from '../../ec-canvas/echarts';
-import ancestors from '../../data/ancestors';
+import * as echarts from '../../../../ec-canvas/echarts';
+import ancestors from '../../../../data/ancestors';
 
 // const app = getApp();
 function initChart(canvas, width, height, dpr) {
@@ -95,7 +95,7 @@ function setAncestors(list) {
   return tmp;
 }
 
-Page({
+Component({
   data: {
     ec: {
       onInit: initChart

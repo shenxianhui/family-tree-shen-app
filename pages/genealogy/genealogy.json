@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "tree": "./components/tree/tree",
+    "radial": "./components/radial/radial"
+  },
+  "disableScroll": true
+}
