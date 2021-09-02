@@ -2,8 +2,8 @@
  * @Author: shenxh
  * @Date: 2021-09-01 09:04:30
  * @LastEditors: shenxh
- * @LastEditTime: 2021-09-02 11:01:10
- * @Description: 人员分布统计
+ * @LastEditTime: 2021-09-02 11:06:02
+ * @Description: 人员比例统计
  */
 import * as echarts from '../../../../ec-canvas/echarts';
 import ancestors from '../../../../data/ancestors';
@@ -24,7 +24,11 @@ function initChart(canvas, width, height, dpr) {
   var option = {
     color: ['#50ccfb', '#fb7f50'],
     tooltip: {
-      trigger: 'item'
+      trigger: 'item',
+      formatter: '{b}: {c} ({d}%)',
+      textStyle: {
+        fontSize: 16
+      }
     },
 
     series: [
@@ -52,7 +56,7 @@ function initChart(canvas, width, height, dpr) {
         data: [{ value: 1232, name: '总数' }]
       },
       {
-        name: '性别占比',
+        name: '比例',
         type: 'pie',
         center: ['50%', '30%'],
         radius: ['50%', '70%'],

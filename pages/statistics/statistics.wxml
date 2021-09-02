@@ -6,9 +6,9 @@
         <quantity wx:if="{{ active == '1' }}"></quantity>
       </view>
     </van-tab>
-    <van-tab title="分布" name="2">
+    <van-tab title="比例" name="2">
       <view class="wrap">
-        <distribute wx:if="{{ active == '2' }}"></distribute>
+        <scale wx:if="{{ active == '2' }}"></scale>
       </view>
     </van-tab>
   </van-tabs>

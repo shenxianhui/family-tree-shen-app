@@ -1,4 +1,4 @@
-<!-- 分布 -->
-<view class="distribute">
+<!-- 比例 -->
+<view class="scale">
   <ec-canvas id="mychart-dom-area" canvas-id="mychart-area" ec="{{ ec }}"></ec-canvas>
 </view>
