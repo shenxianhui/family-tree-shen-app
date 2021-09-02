@@ -2,5 +2,6 @@
   "usingComponents": {
     "ec-canvas": "../../../../ec-canvas/ec-canvas"
   },
-  "component": true
+  "component": true,
+  "disableScroll": true
 }
