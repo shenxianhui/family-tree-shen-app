@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2021-09-02 18:56:01
+ * @LastEditTime: 2021-09-02 20:10:27
  * @Description: 树形图
  */
 import * as echarts from '../../../../ec-canvas/echarts';
@@ -65,8 +65,8 @@ function initChart(canvas, width, height, dpr) {
         // top: '-1000%',
         // bottom: '-1300%',
         orient: 'vertical', // vertical horizontal
-        left: '-1625%',
-        right: '-2200%',
+        left: '-1900%',
+        right: '-2300%',
         top: '10%',
         bottom: '-200%',
         rootLocation: {
