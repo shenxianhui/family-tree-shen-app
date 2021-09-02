@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2021-09-02 15:47:12
+ * @LastEditTime: 2021-09-02 17:18:13
  * @Description: 树形图
  */
 import * as echarts from '../../../../ec-canvas/echarts';
@@ -39,14 +39,14 @@ function initChart(canvas, width, height, dpr) {
     //   }
     // },
 
-    backgroundColor: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+    backgroundColor: new echarts.graphic.RadialGradient(0.4, 0.4, 0.8, [
       {
         offset: 0,
-        color: '#e6e9f0'
+        color: '#f7f8fa'
       },
       {
         offset: 1,
-        color: '#eef1f5'
+        color: '#cdd0d5'
       }
     ]),
     dataZoom: [

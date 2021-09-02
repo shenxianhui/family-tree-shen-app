@@ -24,18 +24,6 @@
         "text": "统计",
         "iconPath": "/assets/tab-bar/tongji.png",
         "selectedIconPath": "/assets/tab-bar/tongji_act.png"
-      },
-      {
-        "pagePath": "pages/fame/fame",
-        "text": "名人堂",
-        "iconPath": "/assets/tab-bar/xueye.png",
-        "selectedIconPath": "/assets/tab-bar/xueye_act.png"
-      },
-      {
-        "pagePath": "pages/news/news",
-        "text": "新闻",
-        "iconPath": "/assets/tab-bar/tongzhi.png",
-        "selectedIconPath": "/assets/tab-bar/tongzhi_act.png"
       }
     ]
   },
