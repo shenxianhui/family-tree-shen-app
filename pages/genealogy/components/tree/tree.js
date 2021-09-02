@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2021-09-02 17:18:13
+ * @LastEditTime: 2021-09-02 18:56:01
  * @Description: 树形图
  */
 import * as echarts from '../../../../ec-canvas/echarts';
@@ -56,25 +56,26 @@ function initChart(canvas, width, height, dpr) {
     ],
     series: [
       {
+        // zoom: 0.5,
         name: '族谱图',
         type: 'tree',
-        orient: 'horizontal', // vertical horizontal
-        left: '20%',
-        right: '-300%',
-        top: '-1000%',
-        bottom: '-1300%',
-        // orient: 'vertical', // vertical horizontal
-        // left: '-1600%',
-        // right: '-2200%',
-        // top: '10%',
-        // bottom: '-200%',
+        // orient: 'horizontal', // vertical horizontal
+        // left: '20%',
+        // right: '-300%',
+        // top: '-1000%',
+        // bottom: '-1300%',
+        orient: 'vertical', // vertical horizontal
+        left: '-1625%',
+        right: '-2200%',
+        top: '10%',
+        bottom: '-200%',
         rootLocation: {
           x: 'center',
           y: 'center'
         }, // 根节点位置  {x: 'center',y: 10}
         symbol: 'rect',
-        symbolSize: [60, 25],
-        // symbolSize: [25, 60],
+        // symbolSize: [60, 25],
+        symbolSize: [25, 60],
         roam: true,
         expandAndCollapse: false,
         initialTreeDepth: -1, // 展开层级
@@ -82,7 +83,7 @@ function initChart(canvas, width, height, dpr) {
         label: {
           show: true,
           position: 'inside',
-          rotate: 90,
+          // rotate: 90,
           textStyle: {
             color: '#fff',
             fontSize: 14
