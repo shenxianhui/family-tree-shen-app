@@ -28,6 +28,7 @@ Page({
   onTabItemTap(item) {
     let obj = Object.assign(ancestors, {
       generation: '一世',
+      sex: 1,
       class: 1,
       children: this.setList(ancestors.children, 2)
     });
@@ -102,9 +103,19 @@ Page({
 
     if (arr && arr.length) {
       tmp = arr.map(item => {
+        let sex = 1;
+        let info = item.info;
+
+        if (
+          (info.includes('女') || info.includes('为室')) &&
+          !info.includes('配')
+        ) {
+          sex = 2;
+        }
         return Object.assign(item, {
           generation,
           class: num,
+          sex,
           children: this.setList(item.children, num + 1)
         });
       });
