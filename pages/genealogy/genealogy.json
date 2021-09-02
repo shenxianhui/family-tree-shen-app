@@ -3,5 +3,6 @@
     "tree": "./components/tree/tree",
     "radial": "./components/radial/radial"
   },
-  "disableScroll": true
+  "disableScroll": true,
+  "navigationBarTitleText": "族谱"
 }

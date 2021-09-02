@@ -2796,10 +2796,27 @@ const data = {
                                               info: '十二世次怀增配王氏',
                                               children: [
                                                 {
-                                                  name: '怀增',
-                                                  info: '十二世次怀增配王氏',
-                                                  children: [],
-                                                  generation: '十三世',
+                                                  name: '耀为',
+                                                  info: '耀为配本村孟氏金莲',
+                                                  children: [
+                                                    {
+                                                      name: '景新',
+                                                      info: '次景新配王氏爱群',
+                                                      children: [],
+                                                      generation: '十四世',
+                                                      class: 14,
+                                                      sex: 1
+                                                    },
+                                                    {
+                                                      name: '景波',
+                                                      info: '长景波配王氏新叶',
+                                                      children: [],
+                                                      generation: '十四世',
+                                                      class: 14,
+                                                      sex: 1
+                                                    }
+                                                  ],
+                                                  generation: '十二世',
                                                   class: 13,
                                                   sex: 1
                                                 }
@@ -2809,30 +2826,12 @@ const data = {
                                               sex: 1
                                             },
                                             {
-                                              name: '耀为',
-                                              info: '耀为配本村孟氏金莲',
-                                              children: [
-                                                {
-                                                  name: '景新',
-                                                  info: '次景新配王氏爱群',
-                                                  children: [],
-                                                  generation: '十三世',
-                                                  class: 13,
-                                                  sex: 1
-                                                },
-                                                {
-                                                  name: '景波',
-                                                  info: '长景波配王氏新叶',
-                                                  children: [],
-                                                  generation: '十三世',
-                                                  class: 13,
-                                                  sex: 1
-                                                }
-                                              ],
+                                              name: '怀彦',
+                                              info: '十二世长怀彦配梁氏',
                                               generation: '十二世',
                                               class: 12,
                                               sex: 1
-                                            }
+                                            },
                                           ],
                                           generation: '十一世',
                                           class: 11,
