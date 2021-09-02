@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2021-09-02 08:42:01
+ * @LastEditTime: 2021-09-02 10:12:38
  * @Description: 树形图
  */
 import * as echarts from '../../../../ec-canvas/echarts';
@@ -43,8 +43,8 @@ function initChart(canvas, width, height, dpr) {
         // top: '-500%',
         // bottom: '-700%',
         orient: 'vertical', // vertical horizontal
-        left: '-1000%',
-        right: '-1400%',
+        left: '-1600%',
+        right: '-2200%',
         top: '10%',
         bottom: '-200%',
         rootLocation: {
@@ -89,10 +89,25 @@ function setAncestors(list) {
 
   if (list && list.length) {
     tmp = list.map(item => {
+      let color = '#3496eb';
+
+      if (item.sex == 1) {
+        color = '#5fbcff';
+        if (item.star) {
+          color = '#527efb';
+        }
+      } else {
+        color = '#fb7f50';
+        if (item.star) {
+          color = '#f35835';
+        }
+      }
+
       return Object.assign({}, item, {
         name: item.name.split('').join('\n'),
         itemStyle: {
-          color: item.star ? '#f56949' : '#3496eb'
+          // color: item.star ? '#f56949' : '#3496eb'
+          color
         },
         children: setAncestors(item.children)
       });

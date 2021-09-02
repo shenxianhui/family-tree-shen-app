@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-09-01 09:04:30
  * @LastEditors: shenxh
- * @LastEditTime: 2021-09-01 18:05:01
+ * @LastEditTime: 2021-09-02 10:32:19
  * @Description: 人员数量统计
  */
 
@@ -11,6 +11,7 @@ import ancestors from '../../../../data/ancestors';
 
 const _ancestors = JSON.parse(JSON.stringify(ancestors));
 let peopleNumList = [];
+let peopleQua = 0;
 
 getQua([_ancestors]);
 // const app = getApp();
@@ -23,12 +24,21 @@ function initChart(canvas, width, height, dpr) {
   canvas.setChart(chart);
 
   var option = {
+    title: {
+      text: '总计: ' + peopleQua + ' 人',
+      textStyle: {
+        color: '#fff',
+        fontSize: 20
+      },
+      bottom: '5%',
+      right: '5%'
+    },
     backgroundColor: '#323a5e',
     grid: {
       top: '20%',
       left: '5%',
       right: '5%',
-      bottom: '10%',
+      bottom: '15%',
       containLabel: true
     },
     tooltip: {
@@ -94,7 +104,7 @@ function initChart(canvas, width, height, dpr) {
           color: '#fff'
         },
         axisLabel: {
-          margin: 20,
+          // margin: 20,
           textStyle: {
             color: '#d1e6eb'
           }
@@ -119,7 +129,7 @@ function initChart(canvas, width, height, dpr) {
           color: '#fff'
         },
         axisLabel: {
-          margin: 20,
+          // margin: 20,
           textStyle: {
             color: '#d1e6eb'
           }
@@ -219,6 +229,7 @@ function initChart(canvas, width, height, dpr) {
 
 function getQua(list) {
   if (list && list.length) {
+    peopleQua += list.length;
     list.forEach(item => {
       if (!peopleNumList[item.class - 1]) {
         peopleNumList[item.class - 1] = {
