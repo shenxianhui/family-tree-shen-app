@@ -36,6 +36,20 @@ Page({
     // console.log(JSON.stringify(obj));
   },
 
+  // 转发
+  onShareAppMessage() {
+    return {
+      title: '申氏族谱可视化小程序',
+      path: '/page/genealogy/genealogy'
+    };
+  },
+  // 分享朋友圈
+  onShareTimeline() {
+    return {
+      title: '申氏族谱可视化小程序'
+    };
+  },
+
   setList(arr, num) {
     let tmp = [];
     let generation = '';

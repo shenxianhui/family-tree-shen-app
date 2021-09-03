@@ -12,20 +12,18 @@ Page({
   onHide() {},
   // 页面销毁时执行
   onUnload() {},
-  // 触发下拉刷新时执行
-  onPullDownRefresh() {},
-  // 页面触底时执行
-  onReachBottom() {},
-  // 页面被用户分享时执行
-  onShareAppMessage() {},
-  // 页面滚动时执行
-  onPageScroll() {},
-  // 页面尺寸变化时执行
-  onResize() {},
-  // tab 点击时执行
-  onTabItemTap(item) {
-    console.log(item.index);
-    console.log(item.pagePath);
-    console.log(item.text);
+
+  // 转发
+  onShareAppMessage() {
+    return {
+      title: '申氏族谱可视化小程序',
+      path: '/page/genealogy/genealogy'
+    };
+  },
+  // 分享朋友圈
+  onShareTimeline() {
+    return {
+      title: '申氏族谱可视化小程序'
+    };
   }
 });
