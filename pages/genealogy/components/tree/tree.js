@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2021-09-02 20:10:27
+ * @LastEditTime: 2021-09-03 09:00:26
  * @Description: 树形图
  */
 import * as echarts from '../../../../ec-canvas/echarts';
@@ -68,7 +68,7 @@ function initChart(canvas, width, height, dpr) {
         left: '-1900%',
         right: '-2300%',
         top: '10%',
-        bottom: '-200%',
+        bottom: '-100%',
         rootLocation: {
           x: 'center',
           y: 'center'
@@ -76,7 +76,7 @@ function initChart(canvas, width, height, dpr) {
         symbol: 'rect',
         // symbolSize: [60, 25],
         symbolSize: [25, 60],
-        roam: true,
+        roam: 'move',
         expandAndCollapse: false,
         initialTreeDepth: -1, // 展开层级
         edgeShape: 'polyline',

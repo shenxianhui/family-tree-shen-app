@@ -26,12 +26,12 @@ Page({
   onResize() {},
   // tab 点击时执行
   onTabItemTap(item) {
-    let obj = Object.assign(ancestors, {
-      generation: '一世',
-      sex: 1,
-      class: 1,
-      children: this.setList(ancestors.children, 2)
-    });
+    // let obj = Object.assign(ancestors, {
+    //   generation: '一世',
+    //   sex: 1,
+    //   class: 1,
+    //   children: this.setList(ancestors.children, 2)
+    // });
 
     // console.log(JSON.stringify(obj));
   },
