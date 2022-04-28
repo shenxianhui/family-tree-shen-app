@@ -1,22 +1,22 @@
 <template>
 	<view>
 		<template v-if="showLoading">
-			<view class="ly-loader ly-flex-center">
-				<view class="ly-loader-inner">加载中...</view>
+			<view class="el-loader el-flex-center">
+				<view class="el-loader-inner">加载中...</view>
 			</view>
 		</template>
 		
 		<template v-else>
 			<view v-if="isEmpty || !visible" 
-				class="ly-empty">
+				class="el-empty">
 				{{emptyText}}
 			</view>
 			<view :key="updateKey"
-				class="ly-tree" 
+				class="el-tree" 
 				:class="{'is-empty': isEmpty || !visible}" 
 				role="tree" 
-				name="LyTreeExpand">
-				<ly-tree-node v-for="nodeId in childNodesId" 
+				name="ElTreeExpand">
+				<el-tree-node v-for="nodeId in childNodesId" 
 					:nodeId="nodeId" 
 					:render-after-expand="renderAfterExpand"
 					:show-checkbox="showCheckbox" 
@@ -25,7 +25,7 @@
 					:key="getNodeKey(nodeId)" 
 					:indent="indent" 
 					:icon-class="iconClass">
-				</ly-tree-node>
+				</el-tree-node>
 			</view>
 		</template>
 	</view>
@@ -35,15 +35,15 @@
 	import Vue from 'vue'
 	import TreeStore from './model/tree-store.js';
 	import {getNodeKey} from './tool/util.js';
-	import LyTreeNode from './ly-tree-node.vue';
+	import ElTreeNode from './el-tree-node.vue';
 
 	export default {
-		name: 'LyTree',
+		name: 'ElTree',
 		
-		componentName: 'LyTree',
+		componentName: 'ElTree',
 		
 		components: {
-			LyTreeNode
+			ElTreeNode
 		},
 		
 		data() {
@@ -255,7 +255,7 @@
 			},
 			childNodesId(){
 				this.$nextTick(() => {
-					this.$emit('ly-tree-render-completed');
+					this.$emit('el-tree-render-completed');
 				});
 			},
 			treeData: {
@@ -527,7 +527,7 @@
 </script>
 
 <style>
-	.ly-tree {
+	.el-tree {
 		position: relative;
 		cursor: default;
 		background: #FFF;
@@ -535,12 +535,12 @@
 		padding: 30rpx;
 	}
 	
-	.ly-tree.is-empty {
+	.el-tree.is-empty {
 		background: transparent;
 	}
 	
 	/* lyEmpty-start */
-	.ly-empty {
+	.el-empty {
 		width: 100%;
 		display: flex;
 		justify-content: center;
@@ -549,41 +549,41 @@
 	/* lyEmpty-end */
 	
 	/* lyLoader-start */
-	.ly-loader {
+	.el-loader {
 		margin-top: 100rpx;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
 	
-	.ly-loader-inner,
-	.ly-loader-inner:before,
-	.ly-loader-inner:after {
+	.el-loader-inner,
+	.el-loader-inner:before,
+	.el-loader-inner:after {
 		background: #efefef;
 		animation: load 1s infinite ease-in-out;
 		width: .5em;
 		height: 1em;
 	}
 	
-	.ly-loader-inner:before,
-	.ly-loader-inner:after {
+	.el-loader-inner:before,
+	.el-loader-inner:after {
 		position: absolute;
 		top: 0;
 		content: '';
 	}
 	
-	.ly-loader-inner:before {
+	.el-loader-inner:before {
 		left: -1em;
 	}
 	
-	.ly-loader-inner {
+	.el-loader-inner {
 		text-indent: -9999em;
 		position: relative;
 		font-size: 22rpx;
 		animation-delay: 0.16s;
 	}
 	
-	.ly-loader-inner:after {
+	.el-loader-inner:after {
 		left: 1em;
 		animation-delay: 0.32s;
 	}

@@ -14,7 +14,7 @@
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8",
     "usingComponents": {
-      "ly-tree-node": "/components/ly-tree/ly-tree-node"
+      "el-tree-node": "/components/el-tree/el-tree-node"
     }
   }
 }

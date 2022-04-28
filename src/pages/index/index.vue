@@ -1,20 +1,20 @@
 <template>
-  <ly-tree
+  <el-tree
     :tree-data="treeData"
     :ready="ready"
     node-key="id"
     @node-expand="handleNodeExpand"
     @node-click="handleNodeClick"
   >
-  </ly-tree>
+  </el-tree>
 </template>
 
 <script>
-import LyTree from '@/components/ly-tree/ly-tree.vue';
+import ElTree from '@/components/el-tree/el-tree.vue';
 
 export default {
   components: {
-    LyTree,
+    ElTree,
   },
   data() {
     return {

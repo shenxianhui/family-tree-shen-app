@@ -1,6 +1,6 @@
 ### lyTree 树组件（看文档！！！看文档！！！看文档！！！导入工程项目！有很多示例！）
 
-### 重要！nvue版本已发布，在components/ly-tree-nvue中，功能与原始版本一致，样式有略微变动，欢迎下载使用，如有问题请加群及时反馈哦~~~
+### 重要！nvue版本已发布，在components/el-tree-nvue中，功能与原始版本一致，样式有略微变动，欢迎下载使用，如有问题请加群及时反馈哦~~~
 
 ### 感谢小伙伴们的支持，请点个五星好评~~
 
@@ -21,7 +21,7 @@
 "globalStyle": {
 		...
 		"usingComponents": {
-			"ly-tree-node": "/components/ly-tree/ly-tree-node"
+			"el-tree-node": "/components/el-tree/el-tree-node"
 		}
 	}
 ```
@@ -82,19 +82,19 @@
 
 ```html
 <template>
-	<ly-tree :tree-data="treeData" 
+	<el-tree :tree-data="treeData" 
 		:ready="ready"
 		node-key="id" 
 		@node-expand="handleNodeExpand" 
 		@node-click="handleNodeClick">
-		</ly-tree>
+		</el-tree>
 </template>
 ```
 ```javascript
-import LyTree from '@/components/ly-tree/ly-tree.vue'
+import ElTree from '@/components/el-tree/el-tree.vue'
 export default {
 	components: {
-		LyTree
+		ElTree
 	},
 	data() {
 		return {
@@ -184,19 +184,19 @@ export default {
 
 ```html
 <template>
-	<ly-tree :tree-data="treeData" 
+	<el-tree :tree-data="treeData" 
 		:props="props"
 		node-key="personId" 
 		@node-expand="handleNodeExpand" 
 		@node-click="handleNodeClick">
-		</ly-tree>
+		</el-tree>
 </template>
 ```
 ```javascript
-import LyTree from '@/components/ly-tree/ly-tree.vue'
+import ElTree from '@/components/el-tree/el-tree.vue'
 export default {
 	components: {
-		LyTree
+		ElTree
 	},
 	data() {
 		return {
@@ -287,17 +287,17 @@ tips:为了确保页面加载完成后才去调用load方法，this指向正确,
 
 ```html
 <template>
-	<ly-tree v-if="isReady" :props="props" node-key="name" :load="loadNode" lazy>
-	</ly-tree>
+	<el-tree v-if="isReady" :props="props" node-key="name" :load="loadNode" lazy>
+	</el-tree>
 </template>
 ```
 ```javascript
-import LyTree from '@/components/ly-tree/ly-tree.vue'
+import ElTree from '@/components/el-tree/el-tree.vue'
 	
 var _self;
 export default {
 	components: {
-		LyTree
+		ElTree
 	},
 	data() {
 		return {
@@ -597,7 +597,7 @@ updateKeyChildren(key, data) {
 |-				|-       |-				|
 |1.01	|2019-12-04       |修复异步获取数据treeData不加载的问题			|
 |1.02	|2019-12-12       |解决小程序手风琴不生效的bug 使用闭包方式解决多个树并存时，store对象被覆盖导致的一系列指向问题			|
-|1.03	|2019-12-16       |修改样式class(iconfont => ly-iconfont)，避免与项目冲突		|
+|1.03	|2019-12-16       |修改样式class(iconfont => el-iconfont)，避免与项目冲突		|
 |1.04	|2019-12-21       |解决checkOnClickNode在单选中失效的bug 新增checkOnlyLeaf配置，当节点是最后一层叶子节点时才显示选择框			|
 |1.05	|2019-12-26       |解决undefined is not an object (evaluating 'e.detail.args'); 的bug			|
 |1.06	|2019-12-27       |uni全局监听事件加上唯一标志前缀，避免多个tree并存时监听到同一个事件			|

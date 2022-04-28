@@ -28,9 +28,9 @@
 		
 		created() {
 			this.classObj = {
-				wrapper: `ly-${this.type}`,
-				input: `ly-${this.type}__input`,
-				inner: `ly-${this.type}__inner`
+				wrapper: `el-${this.type}`,
+				input: `el-${this.type}__input`,
+				inner: `el-${this.type}__inner`
 			}
 		},
 		
@@ -44,8 +44,8 @@
 
 <style>
 	/* lyRadio/lyCheckbox-start */
-	.ly-checkbox,
-	.ly-radio {
+	.el-checkbox,
+	.el-radio {
 		color: #606266;
 		font-weight: 500;
 		font-size: 28rpx;
@@ -54,83 +54,83 @@
 		padding-right: 16rpx
 	}
 	
-	.ly-checkbox__input,
-	.ly-radio__input {
+	.el-checkbox__input,
+	.el-radio__input {
 		cursor: pointer;
 		outline: 0;
 		line-height: 1;
 		vertical-align: middle
 	}
 	
-	.ly-checkbox__input.is-disabled .ly-checkbox__inner,
-	.ly-radio__input.is-disabled .ly-radio__inner {
+	.el-checkbox__input.is-disabled .el-checkbox__inner,
+	.el-radio__input.is-disabled .el-radio__inner {
 		background-color: #edf2fc;
 		border-color: #DCDFE6;
 		cursor: not-allowed
 	}
 	
-	.ly-checkbox__input.is-disabled .ly-checkbox__inner::after,
-	.ly-radio__input.is-disabled .ly-radio__inner::after {
+	.el-checkbox__input.is-disabled .el-checkbox__inner::after,
+	.el-radio__input.is-disabled .el-radio__inner::after {
 		cursor: not-allowed;
 		border-color: #C0C4CC
 	}
 	
-	.ly-checkbox__input.is-disabled .ly-checkbox__inner+.ly-checkbox__label,
-	.ly-radio__input.is-disabled .ly-radio__inner+.ly-radio__label {
+	.el-checkbox__input.is-disabled .el-checkbox__inner+.el-checkbox__label,
+	.el-radio__input.is-disabled .el-radio__inner+.el-radio__label {
 		cursor: not-allowed
 	}
 	
-	.ly-checkbox__input.is-disabled.is-checked .ly-checkbox__inner,
-	.ly-radio__input.is-disabled.is-checked .ly-radio__inner {
+	.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner,
+	.el-radio__input.is-disabled.is-checked .el-radio__inner {
 		background-color: #F2F6FC;
 		border-color: #DCDFE6
 	}
 	
-	.ly-checkbox__input.is-disabled.is-checked .ly-checkbox__inner::after,
-	.ly-radio__input.is-disabled.is-checked .ly-radio__inner::after {
+	.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner::after,
+	.el-radio__input.is-disabled.is-checked .el-radio__inner::after {
 		border-color: #C0C4CC
 	}
 	
-	.ly-checkbox__input.is-disabled.is-indeterminate .ly-checkbox__inner {
+	.el-checkbox__input.is-disabled.is-indeterminate .el-checkbox__inner {
 		background-color: #F2F6FC;
 		border-color: #DCDFE6
 	}
 	
-	.ly-checkbox__input.is-disabled.is-indeterminate .ly-checkbox__inner::before {
+	.el-checkbox__input.is-disabled.is-indeterminate .el-checkbox__inner::before {
 		background-color: #C0C4CC;
 		border-color: #C0C4CC
 	}
 	
-	.ly-checkbox__input.is-checked .ly-checkbox__inner,
-	.ly-radio__input.is-checked .ly-radio__inner,
-	.ly-checkbox__input.is-indeterminate .ly-checkbox__inner {
+	.el-checkbox__input.is-checked .el-checkbox__inner,
+	.el-radio__input.is-checked .el-radio__inner,
+	.el-checkbox__input.is-indeterminate .el-checkbox__inner {
 		background-color: #409EFF;
 		border-color: #409EFF
 	}
 	
-	.ly-checkbox__input.is-disabled+text.ly-checkbox__label,
-	.ly-radio__input.is-disabled+text.ly-radio__label {
+	.el-checkbox__input.is-disabled+text.el-checkbox__label,
+	.el-radio__input.is-disabled+text.el-radio__label {
 		color: #C0C4CC;
 		cursor: not-allowed
 	}
 	
-	.ly-checkbox__input.is-checked .ly-checkbox__inner::after,
-	.ly-radio__input.is-checked .ly-radio__inner::after {
+	.el-checkbox__input.is-checked .el-checkbox__inner::after,
+	.el-radio__input.is-checked .el-radio__inner::after {
 		-webkit-transform: rotate(45deg) scaleY(1);
 		transform: rotate(45deg) scaleY(1)
 	}
 	
-	.ly-checkbox__input.is-checked+.ly-checkbox__label,
-	.ly-radio__input.is-checked+.ly-radio__label {
+	.el-checkbox__input.is-checked+.el-checkbox__label,
+	.el-radio__input.is-checked+.el-radio__label {
 		color: #409EFF
 	}
 	
-	.ly-checkbox__input.is-focus .ly-checkbox__inner,
-	.ly-radio__input.is-focus .ly-radio__inner {
+	.el-checkbox__input.is-focus .el-checkbox__inner,
+	.el-radio__input.is-focus .el-radio__inner {
 		border-color: #409EFF
 	}
 	
-	.ly-checkbox__input.is-indeterminate .ly-checkbox__inner::before {
+	.el-checkbox__input.is-indeterminate .el-checkbox__inner::before {
 		content: '';
 		position: absolute;
 		display: block;
@@ -143,12 +143,12 @@
 		top: 10rpx
 	}
 	
-	.ly-checkbox__input.is-indeterminate .ly-checkbox__inner::after {
+	.el-checkbox__input.is-indeterminate .el-checkbox__inner::after {
 		display: none
 	}
 	
-	.ly-checkbox__inner,
-	.ly-radio__inner {
+	.el-checkbox__inner,
+	.el-radio__inner {
 		display: inline-block;
 		position: relative;
 		border: 2rpx solid #DCDFE6;
@@ -163,14 +163,14 @@
 		transition: border-color .25s cubic-bezier(.71, -.46, .29, 1.46), background-color .25s cubic-bezier(.71, -.46, .29, 1.46)
 	}
 	
-	.ly-radio__inner {
+	.el-radio__inner {
 		border-radius: 50%;
 		width: 34rpx !important;
 		height: 34rpx !important;
 	}
 	
-	.ly-checkbox__inner::after,
-	.ly-radio__inner::after {
+	.el-checkbox__inner::after,
+	.el-radio__inner::after {
 		-webkit-box-sizing: content-box;
 		box-sizing: content-box;
 		content: "";
@@ -192,7 +192,7 @@
 		transform-origin: center
 	}
 	
-	.ly-radio__inner::after {
+	.el-radio__inner::after {
 		left: 12rpx !important;
 		top: 6rpx !important;
 	}

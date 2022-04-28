@@ -1,8 +1,8 @@
 <template>
 	<view ref="node"
-		name="LyTreeNode" 
+		name="ElTreeNode" 
 		v-show="node.visible" 
-		class="ly-tree-node"
+		class="el-tree-node"
 		:class="{ 
 			'is-expanded': expanded, 
 			'is-hidden': !node.visible, 
@@ -10,7 +10,7 @@
 		}"
 		role="treeitem" 
 		@tap.stop="handleClick" >
-		<view class="ly-tree-node__content" 
+		<view class="el-tree-node__content" 
 			:class="{
 				'is-current': node.isCurrent && highlightCurrent
 			}" 
@@ -24,12 +24,12 @@
 						'is-leaf': node.isLeaf, 
 						expanded: !node.isLeaf && node.expanded 
 					}, 
-					'ly-tree-node__expand-icon', 
-					iconClass ? iconClass : 'ly-iconfont ly-icon-caret-right'
+					'el-tree-node__expand-icon', 
+					iconClass ? iconClass : 'el-iconfont el-icon-caret-right'
 				]">
 			</text>
 			
-			<ly-checkbox v-if="checkboxVisible || radioVisible"
+			<el-checkbox v-if="checkboxVisible || radioVisible"
 				:type="checkboxVisible ? 'checkbox' : 'radio'" 
 				:checked="node.checked" 
 				:indeterminate="node.indeterminate" 
@@ -37,32 +37,32 @@
 				@check="handleCheckChange(!node.checked)"/>
 			
 			<text v-if="node.loading" 
-				class="ly-tree-node__loading-icon ly-iconfont ly-icon-loading">
+				class="el-tree-node__loading-icon el-iconfont el-icon-loading">
 			</text>
 			
 			<template v-if="node.icon && node.icon.length > 0">
 				<image 
 					v-if="node.icon.indexOf('/') !== -1" 
-					class="ly-tree-node__icon" 
+					class="el-tree-node__icon" 
 					mode="widthFix"
 					:src="node.icon" 
 					@error="handleImageError"
 					>
 				</image>
 				<text v-else 
-					class="ly-tree-node__icon" 
+					class="el-tree-node__icon" 
 					:class="node.icon">
 				</text>
 			</template>
 			
-			<text class="ly-tree-node__label">{{node.label}}</text>
+			<text class="el-tree-node__label">{{node.label}}</text>
 		</view>
 		
 		<view v-if="!renderAfterExpand || childNodeRendered" 
 			v-show="expanded" 
-			class="ly-tree-node__children" 
+			class="el-tree-node__children" 
 			role="group">
-			<ly-tree-node v-for="cNodeId in node.childNodesId" 
+			<el-tree-node v-for="cNodeId in node.childNodesId" 
 				:nodeId="cNodeId" 
 				:render-after-expand="renderAfterExpand" 
 				:show-checkbox="showCheckbox"
@@ -71,19 +71,19 @@
 				:key="getNodeKey(cNodeId)" 
 				:indent="indent" 
 				:icon-class="iconClass">
-			</ly-tree-node>
+			</el-tree-node>
 		</view>
 	</view>
 </template>
 
 <script>
 	import {getNodeKey} from './tool/util.js';
-	import lyCheckbox from './components/ly-checkbox.vue';
+	import lyCheckbox from './components/el-checkbox.vue';
 
 	export default {
-		name: 'LyTreeNode',
+		name: 'ElTreeNode',
 		
-		componentName: 'LyTreeNode',
+		componentName: 'ElTreeNode',
 		
 		components: {
 			lyCheckbox
@@ -295,38 +295,38 @@
 </script>
 
 <style>
-	.ly-tree-node {
+	.el-tree-node {
 		white-space: nowrap;
 		outline: 0
 	}
 	
-	.ly-tree-node__content {
+	.el-tree-node__content {
 		display: flex;
 		align-items: center;
 		height: 70rpx;
 	}
 	
-	.ly-tree-node__content.is-current {
+	.el-tree-node__content.is-current {
 		background-color: #F5F7FA;
 	}
 	
-	.ly-tree-node__content>.ly-tree-node__expand-icon {
+	.el-tree-node__content>.el-tree-node__expand-icon {
 		padding: 12rpx;
 	}
 	
-	.ly-tree-node__checkbox {
+	.el-tree-node__checkbox {
 		display: flex;
 		margin-right: 16rpx;
 		width: 40rpx;
 		height: 40rpx;
 	}
 	
-	.ly-tree-node__checkbox>image {
+	.el-tree-node__checkbox>image {
 		width: 40rpx;
 		height: 40rpx;
 	}
 	
-	.ly-tree-node__expand-icon {
+	.el-tree-node__expand-icon {
 		color: #C0C4CC;
 		font-size: 28rpx;
 		-webkit-transform: rotate(0);
@@ -337,27 +337,27 @@
 		transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out
 	}
 	
-	.ly-tree-node__expand-icon.expanded {
+	.el-tree-node__expand-icon.expanded {
 		-webkit-transform: rotate(90deg);
 		transform: rotate(90deg)
 	}
 	
-	.ly-tree-node__expand-icon.is-leaf {
+	.el-tree-node__expand-icon.is-leaf {
 		color: transparent;
 	}
 	
-	.ly-tree-node__icon {
+	.el-tree-node__icon {
 		width: 34rpx;
 		height: 34rpx;
 		overflow: hidden;
 		margin-right: 16rpx;
 	}
 	
-	.ly-tree-node__label {
+	.el-tree-node__label {
 		font-size: 28rpx
 	}
 	
-	.ly-tree-node__loading-icon {
+	.el-tree-node__loading-icon {
 		margin-right: 16rpx;
 		font-size: 28rpx;
 		color: #C0C4CC;
@@ -365,20 +365,20 @@
 		animation: rotating 2s linear infinite
 	}
 	
-	.ly-tree-node>.ly-tree-node__children {
+	.el-tree-node>.el-tree-node__children {
 		overflow: hidden;
 		background-color: transparent
 	}
 	
-	.ly-tree-node>.ly-tree-node__children.collapse-transition {
+	.el-tree-node>.el-tree-node__children.collapse-transition {
 		transition: height .3s ease-in-out;
 	}
 	
-	.ly-tree-node.is-expanded>.ly-tree-node__children {
+	.el-tree-node.is-expanded>.el-tree-node__children {
 		display: block
 	}
 	
-	.ly-tree-node_collapse {
+	.el-tree-node_collapse {
 		overflow: hidden;
 		padding-top: 0;
 		padding-bottom: 0;
@@ -387,23 +387,23 @@
 	
 	/* iconfont-start */
 	@font-face {
-		font-family: "ly-iconfont";
+		font-family: "el-iconfont";
 		src: url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPsAAsAAAAACKwAAAOeAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqFDIQPATYCJAMMCwgABCAFhG0HQBtfB8gekiSCdAwUAKgCFMA5Hj7H0PeTlABUr57PVyGqugqzSWJnNwWoWJjx/9rUr4TPL1ZSQpU2mycqwoRwIN3p+MkqMqyEW+OtMBLPSUBb8v//XtWMKTavxYIUsT/Wy1qbQzkBDOYEKGB7dVpPyVqgCnJNwvMvhZl10nMCtQbFoPVhY8ZDncJfF4grbqpQ13AqE52hWqgcOFrEQ6hWnW5VfMCD7Pfjn4WoI6nI/K0bl0MNGPBz0qcflVqYnvCA4vNDPUXGPFCIw8HgtsqiOK9SrW2smm6sVITElWlpISMdVBn8wyMJopLfXg+myZ48KCrSkvj9g37U1ItbXYke4APwXxK3N4TuehyBfmM0I3zbNdt7uk3VnjPtzX0rnIl7z7bZvb/thHohsu9QuykKo+Cws4nL7LsPmI3n2qN9B9upZEIKd4hu0NCKi0rt7fNtdl+I1N25hOJMDQK6odS123tROR7Pg8toEhDaF+kR0TYjxW6M58F5+ZNQOxmZHtE2g+IYjxjlNy/yIRQpCmrgq5R4/3jx8PvT8Ha8d3/xiLnt4EGyaDnznzRv8vpyZ+9TFHf/ntX9e59A+b6+fPHd5+dy0wYHVvHOroWbnWe879O9DnL53bN/gUHuwm28b/n8i/V3ry4E3IoXNqS6Rvs0LhJxeNVjoUkM3LKosU+0a6rh45FVvLt+2oz7Zd53b4QOy7/9snDXHbqVu+A+f8r7PnM2H8kXrWm5c8/vLu7LqRee7HW637mz3kHc5U/RCXf25d7G8tkdgEfwIpzpkknGpaMw3ww55q9Mn9OQNyua/wB/49OOWydn4eL/6roCfjx6FMmcxfJStYRKfd3UwoHiML4rF4uMSK+SvYTuNxMHrpl8yd3Q6v32cAeo/KFaowBJlQHIqo3zi3geKtRZhErVlqDWnOGn67QRKkWpwaw1AkKza5A0egFZszf8In4HFTp9h0rNUQm1NqP1lXUmgyuDBVUlNYi2gHA98FnokUreOZaac1xV1JlMMZGKEs+QdCLVrgynPhUcO0pzzYyUjDAReGSYeBl13YCEIrCpLhOWlGE+mWRD35TQAw8UawRKJVEGQrMAwekCPpaMlpTOz49FmeZwqcREX1t3Ikoo4dMTaQmpBfzhRn9R30uZXTKXKUOSmLSKEQIeYhjqKZcrcIzhMLLRrJMSrA35UF4yGMaWGhPHm733dwJq+Z/NkSJHUXemCirjgpuWrHMD1eC+mQUAAAA=') format('woff2');
 	}
 	
-	.ly-iconfont {
-		font-family: "ly-iconfont" !important;
+	.el-iconfont {
+		font-family: "el-iconfont" !important;
 		font-size: 30rpx;
 		font-style: normal;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}
 	
-	.ly-icon-caret-right:before {
+	.el-icon-caret-right:before {
 		content: "\e8ee";
 	}
 	
-	.ly-icon-loading:before {
+	.el-icon-loading:before {
 		content: "\e657";
 	}
 	/* iconfont-end */
