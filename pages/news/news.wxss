@@ -1,9 +1,0 @@
-.news {
-  height: 100%;
-}
-.no-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
