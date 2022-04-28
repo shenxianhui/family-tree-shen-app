@@ -180,11 +180,11 @@ const data = {
                                                   children: [
                                                     {
                                                       name: '海华',
-                                                      info: '四海华配孙氏俊红',
+                                                      info: '四海华配孙氏俊红19660404',
                                                       children: [
                                                         {
                                                           name: '申鹏瑞',
-                                                          info: '申鹏瑞',
+                                                          info: '申鹏瑞19981126',
                                                           children: [],
                                                           generation: '十五世',
                                                           class: 15,
@@ -192,7 +192,7 @@ const data = {
                                                         },
                                                         {
                                                           name: '千惠',
-                                                          info: '女千惠适白集马东为室',
+                                                          info: '女千惠19900730适白集马东为室',
                                                           children: [],
                                                           generation: '十五世',
                                                           class: 15,
@@ -213,7 +213,7 @@ const data = {
                                                     },
                                                     {
                                                       name: '彩华',
-                                                      info: '次彩华配槐木园于氏吉梅',
+                                                      info: '次彩华配槐木园于氏纪梅19530218',
                                                       children: [],
                                                       generation: '十四世',
                                                       class: 14,
@@ -238,7 +238,7 @@ const data = {
                                                   children: [
                                                     {
                                                       name: '银华',
-                                                      info: '嗣子银华配程村蒋氏书同',
+                                                      info: '嗣子银华配程村蒋氏书同19521122',
                                                       children: [
                                                         {
                                                           name: '相伟',
@@ -272,7 +272,7 @@ const data = {
                                                   children: [
                                                     {
                                                       name: '山华',
-                                                      info: '嗣子山华配朵庄吴氏秀平',
+                                                      info: '嗣子山华配朵庄吴氏秀平19550927',
                                                       children: [
                                                         {
                                                           name: '相争',
@@ -307,7 +307,7 @@ const data = {
                                                   children: [
                                                     {
                                                       name: '俊华',
-                                                      info: '三俊华配槐木园蒋氏凤玲',
+                                                      info: '三俊华19710719配槐木园蒋氏凤玲19690926',
                                                       children: [
                                                         {
                                                           name: '宇蒙',
@@ -333,7 +333,7 @@ const data = {
                                                     },
                                                     {
                                                       name: '爱华',
-                                                      info: '次爱华配岳庄岳氏喜芳',
+                                                      info: '次爱华19660410配岳庄岳氏喜芳19631015',
                                                       children: [
                                                         {
                                                           name: '相朋',
@@ -384,7 +384,7 @@ const data = {
                                                   children: [
                                                     {
                                                       name: '刚华',
-                                                      info: '三刚华配梁庄',
+                                                      info: '三刚华19720415配梁庄王氏书红',
                                                       children: [],
                                                       generation: '十四世',
                                                       class: 14,
