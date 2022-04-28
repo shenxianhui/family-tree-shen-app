@@ -1,0 +1,15 @@
+<!-- 统计 -->
+<view class="statistics">
+  <van-tabs color="#f7b52c" active="{{ active }}" bind:change="changeTab">
+    <van-tab title="数量" name="1">
+      <view class="wrap">
+        <quantity wx:if="{{ active == '1' }}"></quantity>
+      </view>
+    </van-tab>
+    <van-tab title="比例" name="2">
+      <view class="wrap">
+        <scale wx:if="{{ active == '2' }}"></scale>
+      </view>
+    </van-tab>
+  </van-tabs>
+</view>

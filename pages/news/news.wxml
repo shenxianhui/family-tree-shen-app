@@ -1,0 +1,6 @@
+<!-- 新闻 -->
+<view class="news">
+  <view class="no-content">
+    <van-empty description="暂无内容" />
+  </view>
+</view>
