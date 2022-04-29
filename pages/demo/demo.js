@@ -1,7 +1,7 @@
 import F6 from '@antv/f6-wx';
 import TreeGraph from '@antv/f6-wx/extends/graph/treeGraph';
 
-import treeData from '../../data/ancestors-tree';
+import treeData from '../../assets/data/ancestors-tree';
 
 Page({
   canvas: null,
