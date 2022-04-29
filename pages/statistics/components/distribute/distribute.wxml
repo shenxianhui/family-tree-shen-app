@@ -1,4 +1,0 @@
-<!-- 分布 -->
-<view class="distribute">
-  <ec-canvas id="mychart-dom-area" canvas-id="mychart-area" ec="{{ ec }}"></ec-canvas>
-</view>

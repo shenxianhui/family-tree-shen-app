@@ -1,6 +1,6 @@
 .DS_Store
 node_modules/
-miniprogram_npm/
+_demo-component/
 unpackage/
 dist/
 
@@ -22,5 +22,3 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
-package-lock.json
-yarn.lock

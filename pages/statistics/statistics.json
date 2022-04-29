@@ -1,9 +1,0 @@
-{
-  "usingComponents": {
-    "quantity": "./components/quantity/quantity",
-    "scale": "./components/scale/scale",
-    "distribute": "./components/distribute/distribute"
-  },
-  "disableScroll": true,
-  "navigationBarTitleText": "统计"
-}
