@@ -30,7 +30,20 @@ Page({
   // onReachBottom() {},
 
   // 页面被用户分享时执行
-  // onShareAppMessage() {},
+  onShareAppMessage() {
+    return {
+      title: '申氏族谱',
+      path: '/pages/home/home',
+    };
+  },
+
+  // 分享朋友圈
+  onShareTimeline() {
+    return {
+      title: '申氏族谱',
+      query: '/pages/home/home',
+    };
+  },
 
   // 页面滚动时执行
   // onPageScroll() {},

@@ -2,13 +2,13 @@
  * @Author: shenxh
  * @Date: 2021-09-02 14:05:52
  * @LastEditors: shenxh
- * @LastEditTime: 2021-09-02 15:55:08
+ * @LastEditTime: 2022-04-29 17:17:31
  * @Description: 用户详情
  */
 
 Page({
   data: {
-    userinfo: {}
+    userinfo: {},
   },
   // 页面创建时执行
   onLoad(options) {
@@ -19,11 +19,11 @@ Page({
       let userinfo = { ...data };
 
       wx.setNavigationBarTitle({
-        title: data.formatName + '个人资料'
+        title: data.formatName + '个人资料',
       });
       userinfo.children = userinfo.children.map(item => {
         return Object.assign(item, {
-          children: []
+          children: [],
           // children: item.children.map(item1 => {
           //   return Object.assign(item1, {
           //     children: []
@@ -33,7 +33,7 @@ Page({
       });
 
       this.setData({
-        userinfo
+        userinfo,
       });
     });
   },
@@ -44,5 +44,21 @@ Page({
   // 页面从前台变为后台时执行
   onHide() {},
   // 页面销毁时执行
-  onUnload() {}
+  onUnload() {},
+
+  // 页面被用户分享时执行
+  onShareAppMessage() {
+    return {
+      title: '申氏族谱',
+      path: '/pages/home/home',
+    };
+  },
+
+  // 分享朋友圈
+  onShareTimeline() {
+    return {
+      title: '申氏族谱',
+      query: '/pages/home/home',
+    };
+  },
 });

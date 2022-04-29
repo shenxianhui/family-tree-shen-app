@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2022-04-29 16:31:25
+ * @LastEditTime: 2022-04-29 17:24:29
  * @Description: 树形图
  */
 import * as echarts from '../../ec-canvas/echarts';
@@ -128,6 +128,22 @@ Page({
   },
 
   onReady() {},
+
+  // 页面被用户分享时执行
+  onShareAppMessage() {
+    return {
+      title: '申氏族谱',
+      path: '/pages/home/home',
+    };
+  },
+
+  // 分享朋友圈
+  onShareTimeline() {
+    return {
+      title: '申氏族谱',
+      query: '/pages/home/home',
+    };
+  },
 
   handleBack() {
     wx.switchTab({
