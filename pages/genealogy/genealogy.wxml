@@ -1,4 +1,5 @@
 <!-- 树形图 -->
 <view class="tree">
-  <ec-canvas id="mychart-dom-area" canvas-id="mychart-area" ec="{{ ec }}"></ec-canvas>
+	<text class="back" bindtap="handleBack">返回</text>
+	<ec-canvas id="mychart-dom-area" canvas-id="mychart-area" ec="{{ ec }}"></ec-canvas>
 </view>

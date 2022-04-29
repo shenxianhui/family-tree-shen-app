@@ -2,19 +2,17 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2022-04-29 14:26:43
+ * @LastEditTime: 2022-04-29 16:31:25
  * @Description: 树形图
  */
 import * as echarts from '../../ec-canvas/echarts';
 import ancestors from '../../assets/data/ancestors-tree';
 
-const _ancestors = JSON.parse(JSON.stringify(ancestors));
-
 function initChart(canvas, width, height, dpr) {
   const chart = echarts.init(canvas, null, {
     width: width,
     height: height,
-    devicePixelRatio: dpr // new
+    devicePixelRatio: dpr, // new
   });
   canvas.setChart(chart);
 
@@ -23,85 +21,65 @@ function initChart(canvas, width, height, dpr) {
       url: '/pages/user-details/user-details',
       success: res => {
         res.eventChannel.emit('data', evt.data);
-      }
+      },
     });
   });
 
-  let ancestorsData = setAncestors([_ancestors]);
+  let ancestorsData = setAncestors([ancestors]);
 
   var option = {
-    calculable: false,
-    // tooltip: {
-    //   show: true,
-    //   confine: true,
-    //   formatter: data => {
-    //     return data.data.info || '';
-    //   }
-    // },
-
-    backgroundColor: new echarts.graphic.RadialGradient(0.4, 0.4, 0.8, [
-      {
-        offset: 0,
-        color: '#f7f8fa'
-      },
-      {
-        offset: 1,
-        color: '#cdd0d5'
-      }
-    ]),
-    dataZoom: [
-      {
-        type: 'inside'
-      }
-    ],
+    // backgroundColor: new echarts.graphic.RadialGradient(0.4, 0.4, 0.8, [
+    //   {
+    //     offset: 0,
+    //     color: '#f7f8fa',
+    //   },
+    //   {
+    //     offset: 1,
+    //     color: '#cdd0d5',
+    //   },
+    // ]),
     series: [
       {
         // zoom: 0.5,
         name: '族谱图',
         type: 'tree',
-        // orient: 'horizontal', // vertical horizontal
-        // left: '20%',
-        // right: '-300%',
-        // top: '-1000%',
-        // bottom: '-1300%',
-        orient: 'vertical', // vertical horizontal
-        left: '-1900%',
-        right: '-2300%',
-        top: '10%',
-        bottom: '-100%',
+        orient: 'horizontal', // vertical horizontal
         rootLocation: {
           x: 'center',
-          y: 'center'
+          y: 'center',
         }, // 根节点位置  {x: 'center',y: 10}
-        symbol: 'rect',
-        // symbolSize: [60, 25],
-        symbolSize: [25, 60],
-        // roam: 'move',
+        symbol: 'none',
+        symbolSize: false,
         roam: true,
         expandAndCollapse: false,
         initialTreeDepth: -1, // 展开层级
-        edgeShape: 'polyline',
+        edgeShape: 'polyline', // curve polyline
         label: {
           show: true,
           position: 'inside',
-          // rotate: 90,
+          // fontWeight: 'bold',
+          // fontFamily: 'STLiti', // 华文隶书: STLiti; 楷体: KaiTi
           textStyle: {
             color: '#fff',
-            fontSize: 14
-          }
+            fontSize: 18,
+          },
+          width: 70,
+          height: 30,
+          backgroundColor: '#3496eb',
+        },
+        labelLayout: {
+          hideOverlap: true, // 隐藏重叠的标签
         },
         lineStyle: {
           color: '#3496eb',
           curveness: 0.5,
-          width: 0.5,
-          type: 'solid'
+          width: 1,
+          type: 'solid',
         },
-        itemStyle: {
-          color: '#3496eb'
-        },
-        data: ancestorsData
-      }
-    ]
+        data: ancestorsData,
+      },
+    ],
+    animation: false,
   };
 
   chart.setOption(option);
@@ -128,21 +106,13 @@ function setAncestors(list, parent = {}) {
       }
 
       return Object.assign({}, item, {
-        name: item.name.split('').join('\n'),
+        // name: item.name.split('').join('\n'),
         formatName: item.name,
         parent,
-        itemStyle: {
-          // color: item.star ? '#f56949' : '#3496eb'
-          color
+        label: {
+          backgroundColor: color,
         },
-        children: setAncestors(
-          item.children,
-          item
-          // Object.assign({}, item, {
-          //   formatName: item.name,
-          //   parent
-          // })
-        )
+        children: setAncestors(item.children, item),
       });
     });
   }
@@ -153,9 +123,15 @@ function setAncestors(list, parent = {}) {
 Page({
   data: {
     ec: {
-      onInit: initChart
-    }
+      onInit: initChart,
+    },
   },
 
-  onReady() {}
+  onReady() {},
+
+  handleBack() {
+    wx.switchTab({
+      url: '/pages/home/home',
+    });
+  },
 });
