@@ -1,14 +1,17 @@
 {
-  "pages": ["pages/home/home", "pages/pedigree/pedigree"],
+  "pages": ["pages/home/home", "pages/genealogy/genealogy", "pages/user-details/user-details"],
   "tabBar": {
     "custom": true,
-    "list": [{
-      "pagePath": "pages/home/home",
-      "text": "首页"
-    }, {
-      "pagePath": "pages/pedigree/pedigree",
-      "text": "族谱"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/genealogy/genealogy",
+        "text": "族谱"
+      }
+    ]
   },
   "window": {
     "backgroundTextStyle": "light",

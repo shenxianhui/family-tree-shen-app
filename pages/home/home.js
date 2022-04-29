@@ -44,7 +44,7 @@ Page({
   /* 事件响应函数 */
   handleCover() {
     wx.switchTab({
-      url: '/pages/pedigree/pedigree',
+      url: '/pages/genealogy/genealogy',
     });
   },
 });
