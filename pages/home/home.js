@@ -13,8 +13,8 @@ Page({
   // 页面首次渲染完毕时执行
   onReady() {
     wx.setNavigationBarTitle({
-      title: ''
-    })
+      title: '',
+    });
   },
 
   // 页面从前台变为后台时执行
@@ -42,4 +42,9 @@ Page({
   // onTabItemTap(item) {},
 
   /* 事件响应函数 */
-})
+  handleCover() {
+    wx.switchTab({
+      url: '/pages/pedigree/pedigree',
+    });
+  },
+});

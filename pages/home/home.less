@@ -2,6 +2,7 @@
   position: relative;
   width: 100vw;
   height: 100vh;
+	color: #333;
   .home-bg {
     position: absolute;
     top: 0;
@@ -10,17 +11,33 @@
     height: 100%;
     z-index: -2;
   }
-  .menu {
-    position: absolute;
-    top: 35%;
-    left: 10%;
-    .menu-item {
-      font-size: 46rpx;
-      &:not(:last-child) {
-        margin-bottom: 20rpx;
-      }
-    }
-  }
+	.info {
+		position: absolute;
+		display: flex;
+		align-items: flex-end;
+		top: 30%;
+		left: 10%;
+		.title {
+			width: 100rpx;
+			font-size: 100rpx;
+			padding: 20rpx;
+			// border-radius: 20rpx;
+			// background-color: #fff;
+			text-shadow: 5px 3px 10px #999;
+			color: #333;
+		}
+		.menu {
+			display: flex;
+			.menu-item {
+				width: 45rpx;
+				font-size: 46rpx;
+				padding: 20rpx;
+				&:not(:last-child) {
+					margin-right: 20rpx;
+				}
+			}
+		}
+	}
   .bird-wrap {
     position: absolute;
     display: flex;
