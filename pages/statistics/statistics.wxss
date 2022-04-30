@@ -1,0 +1,1 @@
+.statistics{position:relative;width:100%;height:100%;background-color:#323a5e}.statistics .back{position:absolute;top:80rpx;left:30rpx;font-size:38rpx;font-weight:bold;padding:20rpx;color:#fff;z-index:9}.statistics ec-canvas{width:100%;height:100%}

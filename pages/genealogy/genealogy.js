@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2022-04-30 18:53:40
+ * @LastEditTime: 2022-04-30 22:09:39
  * @Description: 树形图
  */
 import * as echarts from '../../ec-canvas/echarts';
@@ -140,14 +140,6 @@ Page({
     wx.switchTab({
       url: '/pages/home/home',
     });
-    // Object.assign(option.series[0], {
-    //   left: '20%',
-    //   right: '-300%',
-    //   top: '-870%',
-    //   bottom: '-1050%',
-    // });
-
-    // this.initChart();
   },
 
   // 图表初始化

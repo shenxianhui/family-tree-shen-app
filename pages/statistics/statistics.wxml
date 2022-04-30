@@ -1,0 +1,5 @@
+<!-- 树形图 -->
+<view class="statistics">
+	<text class="back" bindtap="handleBack">返回</text>
+  <ec-canvas id="chart-bar" canvas-id="chart-bar" ec="{{ ec }}"></ec-canvas>
+</view>

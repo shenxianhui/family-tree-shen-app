@@ -1,5 +1,12 @@
 {
-  "pages": ["pages/home/home", "pages/genealogy/genealogy", "pages/user-details/user-details"],
+  "pages": [
+    "pages/home/home",
+    "pages/genealogy/genealogy",
+    "pages/statistics/statistics",
+    "pages/course/course",
+
+    "pages/user-details/user-details"
+  ],
   "tabBar": {
     "custom": true,
     "list": [
@@ -10,6 +17,14 @@
       {
         "pagePath": "pages/genealogy/genealogy",
         "text": "族谱"
+      },
+      {
+        "pagePath": "pages/statistics/statistics",
+        "text": "概况"
+      },
+      {
+        "pagePath": "pages/course/course",
+        "text": "历程"
       }
     ]
   },

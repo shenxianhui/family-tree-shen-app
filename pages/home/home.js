@@ -60,17 +60,13 @@ Page({
       case 1:
         url = '/pages/genealogy/genealogy';
         break;
-      // 族谱
+      // 概况
       case 2:
-        url = '/pages/genealogy/genealogy';
+        url = '/pages/statistics/statistics';
         break;
-      // 族谱
+      // 历程
       case 3:
-        url = '/pages/genealogy/genealogy';
-        break;
-      // 族谱
-      case 4:
-        url = '/pages/genealogy/genealogy';
+        url = '/pages/course/course';
         break;
     }
     wx.switchTab({
