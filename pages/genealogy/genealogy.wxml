@@ -1,5 +1,10 @@
 <!-- 树形图 -->
 <view class="tree">
 	<text class="back" bindtap="handleBack">返回</text>
+	<image
+		class="bg"
+    mode="aspectFill"
+		src="https://636c-cloud1-2glsmv54208d242b-1311412316.tcb.qcloud.la/image/family-tree-shen/read_bg.jpg?sign=4f8c019ff978b6f02fad55f232000de4&t=1651297693"
+	></image>
 	<ec-canvas id="mychart-dom-area" canvas-id="mychart-area" ec="{{ ec }}"></ec-canvas>
 </view>

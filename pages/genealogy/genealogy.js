@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2022-04-29 17:24:29
+ * @LastEditTime: 2022-04-30 14:13:58
  * @Description: 树形图
  */
 import * as echarts from '../../ec-canvas/echarts';
@@ -43,6 +43,10 @@ function initChart(canvas, width, height, dpr) {
         // zoom: 0.5,
         name: '族谱图',
         type: 'tree',
+				left: '20%',
+				right: '-300%',
+				top: '-870%',
+				bottom: '-1050%',
         orient: 'horizontal', // vertical horizontal
         rootLocation: {
           x: 'center',
@@ -50,7 +54,7 @@ function initChart(canvas, width, height, dpr) {
         }, // 根节点位置  {x: 'center',y: 10}
         symbol: 'none',
         symbolSize: false,
-        roam: true,
+        roam: 'move', // 是否开启鼠标缩放和平移漫游 可以设置成 'scale' 或者 'move'。设置成 true 为都开启
         expandAndCollapse: false,
         initialTreeDepth: -1, // 展开层级
         edgeShape: 'polyline', // curve polyline
