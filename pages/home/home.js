@@ -11,11 +11,7 @@ Page({
   // onShow() {},
 
   // 页面首次渲染完毕时执行
-  onReady() {
-    wx.setNavigationBarTitle({
-      title: '',
-    });
-  },
+  // onReady() {},
 
   // 页面从前台变为后台时执行
   // onHide() {},
@@ -55,9 +51,30 @@ Page({
   // onTabItemTap(item) {},
 
   /* 事件响应函数 */
-  handleCover() {
+  handleCover(evt) {
+    const { menuIdx } = evt.currentTarget.dataset;
+    let url = '';
+
+    switch (menuIdx) {
+      // 族谱
+      case 1:
+        url = '/pages/genealogy/genealogy';
+        break;
+      // 族谱
+      case 2:
+        url = '/pages/genealogy/genealogy';
+        break;
+      // 族谱
+      case 3:
+        url = '/pages/genealogy/genealogy';
+        break;
+      // 族谱
+      case 4:
+        url = '/pages/genealogy/genealogy';
+        break;
+    }
     wx.switchTab({
-      url: '/pages/genealogy/genealogy',
+      url,
     });
   },
 });

@@ -2,5 +2,10 @@
 page {
   width: 100vw;
   height: 100vh;
-	overflow: hidden;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'myFont';
+  src: url('https://636c-cloud1-2glsmv54208d242b-1311412316.tcb.qcloud.la/%E5%AD%97%E4%BD%93/LiXuKeShuFa-1.ttf?sign=71ef2bcd360810d41b5c9e8da55faaf8&t=1651294589');
 }
