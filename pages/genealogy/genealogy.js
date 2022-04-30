@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2022-04-30 15:46:31
+ * @LastEditTime: 2022-04-30 18:53:40
  * @Description: 树形图
  */
 import * as echarts from '../../ec-canvas/echarts';
@@ -20,23 +20,20 @@ let option = {
   //     color: '#cdd0d5',
   //   },
   // ]),
+  toolbox: {},
   series: [
     {
-      // zoom: 0.5,
       name: '族谱图',
       type: 'tree',
+      // zoom: 1,
       left: '20%',
-      right: '-300%',
-      top: '-870%',
-      bottom: '-1050%',
+      // right: '-300%',
+      // top: '-870%',
+      // bottom: '-1050%',
       orient: 'horizontal', // vertical horizontal
-      rootLocation: {
-        x: 'center',
-        y: 'center',
-      }, // 根节点位置  {x: 'center',y: 10}
       symbol: 'none',
       symbolSize: false,
-      roam: 'move', // 是否开启鼠标缩放和平移漫游 可以设置成 'scale' 或者 'move'。设置成 true 为都开启
+      roam: true, // 是否开启鼠标缩放和平移漫游 可以设置成 'scale' 或者 'move'。设置成 true 为都开启
       expandAndCollapse: false,
       initialTreeDepth: -1, // 展开层级
       edgeShape: 'polyline', // curve polyline
@@ -51,10 +48,11 @@ let option = {
         },
         width: 70,
         height: 30,
+				borderRadius: 4,
         backgroundColor: '#3496eb',
       },
       labelLayout: {
-        hideOverlap: true, // 隐藏重叠的标签
+        // hideOverlap: true, // 隐藏重叠的标签
       },
       lineStyle: {
         color: '#3496eb',
@@ -174,6 +172,9 @@ Page({
             res.eventChannel.emit('data', evt.data);
           },
         });
+      });
+      myChart.on('finished', () => {
+        console.log('finished');
       });
 
       myChart.setOption(option);
