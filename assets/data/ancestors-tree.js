@@ -802,7 +802,18 @@ export default {
                                                               name: '海豹',
                                                               info: '海豹19901102本科配大王寨于家于氏洪娟19900218',
                                                               star: true,
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子喆',
+                                                                  info: '子喆20191009',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '梓潼',
+                                                                  info: '女梓潼20161009',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -2046,7 +2057,18 @@ export default {
                                                             {
                                                               name: '海亮',
                                                               info: '海亮19780204配槐木园刘氏景莲19760507',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子硕',
+                                                                  info: '子硕20130102',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '红',
+                                                                  info: '女红20031009',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -2092,7 +2114,18 @@ export default {
                                                             {
                                                               name: '海辉',
                                                               info: '海辉19780228配蔚室怀英19760801',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子月',
+                                                                  info: '子月20110527',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子冉',
+                                                                  info: '女子冉20031113',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海霞',
@@ -3236,7 +3269,18 @@ export default {
                                                             {
                                                               name: '立强',
                                                               info: '立强19840128配小花园头宋氏彦芳19821105',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子轩',
+                                                                  info: '子轩20130908',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '锐涵',
+                                                                  info: '女锐涵20070911',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -3252,7 +3296,13 @@ export default {
                                                               name: '立刚',
                                                               info: '立刚（格菲）19780420东风汽车公司配湖北蕲春胡氏菊红19800929',
                                                               star: true,
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '雨陌',
+                                                                  info: '雨陌20070329',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '红艳',
@@ -3719,17 +3769,50 @@ export default {
                                                             {
                                                               name: '海辉',
                                                               info: '三海辉19870814配程村刘氏井先860710',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '佳莹',
+                                                                  info: '女佳莹20191123',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子飞',
+                                                                  info: '子飞20120426',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海虎',
                                                               info: '次海虎19860718配小伊庄王氏庆华19870916',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子明',
+                                                                  info: '子明20130318',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '悦',
+                                                                  info: '女悦20101031',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海顺',
                                                               info: '长海顺19841013配小花园头宋氏俊景19820718',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '佳蕊',
+                                                                  info: '女佳蕊20130313',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子乐',
+                                                                  info: '子乐20071023',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -3779,7 +3862,18 @@ export default {
                                                             {
                                                               name: '海会',
                                                               info: '次海会19820823配五岔路安氏海香19811010',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '雨鑫',
+                                                                  info: '女雨鑫20170728',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子安',
+                                                                  info: '子安20090115',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海霞',
@@ -3789,7 +3883,18 @@ export default {
                                                             {
                                                               name: '海松',
                                                               info: '长海松19790706配务头冯氏敏19750815',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '晓淇',
+                                                                  info: '次女晓淇20120812',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '妍',
+                                                                  info: '长女妍20021114',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -3821,12 +3926,29 @@ export default {
                                                             {
                                                               name: '海龙',
                                                               info: '次海龙19880504配本村李氏晶晶19890207',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子昌',
+                                                                  info: '子昌20110207',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海豹',
                                                               info: '长海豹19850918配段庄范氏红梅19820614',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子珊',
+                                                                  info: '女子珊20140906',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子卓',
+                                                                  info: '子卓20080802',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海玲',
@@ -3854,7 +3976,13 @@ export default {
                                                             {
                                                               name: '海滨',
                                                               info: '海滨19751206配王氏霞19761114',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子浩',
+                                                                  info: '子浩20050215',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -5117,7 +5245,13 @@ export default {
                                                               name: '海南',
                                                               info: '海南19921105本科县医院配张八里庄王氏红梅19940108',
                                                               star: true,
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子晏',
+                                                                  info: '子晏20190821',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -5216,7 +5350,23 @@ export default {
                                                             {
                                                               name: '海瑞',
                                                               info: '海瑞19891222配吕氏红梅19900106',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子琦',
+                                                                  info: '子琦20210819',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子含',
+                                                                  info: '次女子含20170114',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子怡',
+                                                                  info: '长女子怡20140724',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -5335,7 +5485,18 @@ export default {
                                                               name: '海峰',
                                                               info: '海峰19811102本科南通工作配吴氏艳华19870617',
                                                               star: true,
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子珹',
+                                                                  info: '子珹20120327',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子琪',
+                                                                  info: '女子琪20200911',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '丽',
@@ -5637,7 +5798,18 @@ export default {
                                                             {
                                                               name: '海迪',
                                                               info: '海迪19910306配程村蒋氏楠楠19921105',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '文硕',
+                                                                  info: '次女文硕20110306',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '文婧',
+                                                                  info: '长女文婧20191119',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -5667,7 +5839,18 @@ export default {
                                                             {
                                                               name: '海奎',
                                                               info: '海奎19820715配务头冯氏国娟19801201',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子鑫',
+                                                                  info: '子鑫20101018',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子路',
+                                                                  info: '子路20051220',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海燕',
@@ -6437,7 +6620,18 @@ export default {
                                                             {
                                                               name: '海强',
                                                               info: '海强19771211配本村韩公书君之女冠霞19750102',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '一诺',
+                                                                  info: '女一诺20041208',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '良',
+                                                                  info: '良19981025',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '彦君',
@@ -6456,7 +6650,19 @@ export default {
                                                             {
                                                               name: '海彬',
                                                               info: '海彬19741226配西开蒋氏红英19750203',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子辰',
+                                                                  info: '子辰20080112',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '晓彤',
+                                                                  info: '女晓彤19990929本科',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -6575,7 +6781,18 @@ export default {
                                                               name: '海洋',
                                                               info: '海洋19860102聊城市人力资源和社会保障局办公室副主任配王氏黎19851220七中教师',
                                                               star: true,
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '思远',
+                                                                  info: '思远20190119',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '航雨',
+                                                                  info: '女航雨20130525',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -6605,19 +6822,38 @@ export default {
                                                               name: '海雷',
                                                               info: '三海雷19820407本科大连市公安局二级警长配于氏洋19880130本科',
                                                               star: true,
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '雨凡',
+                                                                  info: '女雨凡20140606',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海云',
                                                               info: '次海云19760825本科沈阳皇姑区街道办事处综治科科长配辽阳赵氏玲玲19790312本科',
                                                               star: true,
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '怡凡',
+                                                                  info: '女怡凡20060319',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海龙',
                                                               info: '长海龙19721001本科正团级，上校军衔配辽宁海城仲氏梅19730614大校硕士研究生',
                                                               star: true,
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '嘉宁',
+                                                                  info: '嘉宁20000803沈阳音乐学院本科',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -6658,7 +6894,18 @@ export default {
                                                               name: '海涛',
                                                               info: '次海涛197605北部战区联合参谋部工作配范氏静涛197801',
                                                               star: true,
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '婉凝',
+                                                                  info: '女婉凝20201511',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '轩齐',
+                                                                  info: '轩齐20200707',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '静',
@@ -6670,7 +6917,14 @@ export default {
                                                               name: '海青',
                                                               info: '长海青196903盘锦市副市长兼公安局长配刘氏彤197206',
                                                               star: true,
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '思怡',
+                                                                  info: '女思怡199910研究生',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -6719,7 +6973,18 @@ export default {
                                                             {
                                                               name: '海英',
                                                               info: '海英19670116配槐木园王氏俊环19681005',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学景',
+                                                                  info: '次女学景20010511',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学会',
+                                                                  info: '长女学会19901011适白塔集郭永强为室',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -6779,7 +7044,13 @@ export default {
                                                             {
                                                               name: '海林',
                                                               info: '海林19690814配王村成氏秀华19680925',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子光',
+                                                                  info: '子光950412配槐木园韩氏立飞990119',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -6793,12 +7064,39 @@ export default {
                                                             {
                                                               name: '墨泽',
                                                               info: '次墨泽19570206字丁起配朵庄杨氏爱民19630818',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '欣',
+                                                                  info: '三女欣19910510适王村刘德新为室',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '欢',
+                                                                  info: '次女欢19900316适槐木园韩桂才为室',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '荣',
+                                                                  info: '长女荣19871003适本村孔德豹为室',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '墨坡',
                                                               info: '长墨坡19531211字丁宝配陈氏玉香19550806',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '迪',
+                                                                  info: '次迪19800709',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子建',
+                                                                  info: '长子建19790615配韩氏海先19760706',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -6848,12 +7146,44 @@ export default {
                                                             {
                                                               name: '海新',
                                                               info: '次海新19730919配梁辛庄梁氏风萍19741211',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子瑞',
+                                                                  info: '子瑞20070115',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '娇娇',
+                                                                  info: '女娇娇19991024适长芦村冯彬彬为室',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海宽',
                                                               info: '长海宽19570219配四川绵阳刘氏燕19590630',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子恒',
+                                                                  info: '子恒19860709配陈辛庄陈氏俊井19881117',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '双',
+                                                                  info: '三女双19850508适朵庄杨建剁为室',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '玉',
+                                                                  info: '次女玉19831129配莘县薛世军为室',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '梅',
+                                                                  info: '长女梅19820620适内蒙赤峰马天柱为室',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -6948,7 +7278,18 @@ export default {
                                                             {
                                                               name: '墨庭',
                                                               info: '墨庭19780406配东昌府姜官屯蒋氏秀青19741019',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '旭东',
+                                                                  info: '旭东20070520',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '欣冉',
+                                                                  info: '女欣冉20040218',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -6962,13 +7303,30 @@ export default {
                                                             {
                                                               name: '墨超',
                                                               info: '次墨超19660120配本村陈公书同之女金兰19631012',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学亚',
+                                                                  info: '学亚19891113配王村成氏保燕19880505',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '墨军',
                                                               info: '长墨军19461015字书桥陕西潼关金矿工作配朵庄王氏玉环19461010',
                                                               star: true,
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学亮',
+                                                                  info: '次学亮19780725配李氏颜霖19801127',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学峰',
+                                                                  info: '长学峰19750413',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -7191,18 +7549,51 @@ export default {
                                                             {
                                                               name: '墨龙',
                                                               info: '四墨龙19790228配梁辛庄梁氏爱丽19810407',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '乐乐',
+                                                                  info: '三女乐乐20180903',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '欢欢',
+                                                                  info: '次女欢欢20180903',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '齐齐',
+                                                                  info: '长女齐齐20120614',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学远',
+                                                                  info: '学远20041224',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '墨盘',
                                                               info: '三墨盘19730131配白集杨氏书华19700307',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学利',
+                                                                  info: '学利19990123冠县中心医院工作',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '墨杭',
                                                               info: '次墨杭19690914冠星工作配冠县北街周氏华云19700105',
                                                               star: true,
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学伟',
+                                                                  info: '学伟19920701冠县医院工作配许三里陆氏越19910529',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '墨山',
@@ -7222,7 +7613,24 @@ export default {
                                                             {
                                                               name: '墨鲁',
                                                               info: '次墨鲁19730926配东吕庄陈氏喜洪19771209',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '晶晶',
+                                                                  info: '次女晶晶20110706',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '鑫鑫',
+                                                                  info: '长女鑫鑫20110706',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学克',
+                                                                  info: '学克本科20011012',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '墨峰',
@@ -7250,17 +7658,68 @@ export default {
                                                             {
                                                               name: '墨臣',
                                                               info: '三墨臣19520828配岳庄岳氏凤莲19490811',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学佳',
+                                                                  info: '四学佳19850205本科配淄博桓台夏家村伊氏玲玉19870507本科',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学国',
+                                                                  info: '三学国19780303配苇园宋氏秀敏19790911',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学胜',
+                                                                  info: '次学胜19751129配王马庄孟氏书菊19730825',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学献',
+                                                                  info: '长学献19731029冠县综合行政执法局工作配万善童氏秀玲19750307',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '墨富',
                                                               info: '次墨富19490302配本村韩氏巧莲19480820',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学忠',
+                                                                  info: '次学忠19731107县电管局工作配辛集员庄丁氏军19731110',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学民',
+                                                                  info: '长学民配王马庄张氏巧芝19700721',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学英',
+                                                                  info: '女学英19691008适杨胡疃杨玉申为室',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '墨增',
                                                               info: '长墨增配陈贯庄张氏金莲',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学玲',
+                                                                  info: '次女学玲19840523适东十里营丁德路为室',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学真',
+                                                                  info: '长女学真19670901适岳庄喜尧为室',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -7283,12 +7742,59 @@ export default {
                                                             {
                                                               name: '墨阔',
                                                               info: '次墨阔19640724配任二庄马氏改真19610915',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学娜',
+                                                                  info: '女学娜19880620适四川眉山杨阳为室',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学勇',
+                                                                  info: '次学勇19850113（通）配西吕庄刘氏彩龙19890401',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学东',
+                                                                  info: '长学东19821204配槐木园王氏月红19830210',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '墨宽',
                                                               info: '长墨宽配杨马庄殷氏秀英19521205',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学州',
+                                                                  info: '次学州19920721配淄博沂源刘氏公双19910819',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学宾',
+                                                                  info: '长学宾19881130配聊城广平张氏洋洋19890603',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学青',
+                                                                  info: '四女学青19840927适梁辛庄梁中建为室',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学会',
+                                                                  info: '三女学会19811120适朵庄王泽云为室',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学华',
+                                                                  info: '次女学华19790220适东开张士涛为室',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学燕',
+                                                                  info: '长女学燕19770413适东昌府孙树辉为室',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -7327,7 +7833,18 @@ export default {
                                                             {
                                                               name: '墨昌',
                                                               info: '墨昌配本村陈氏金芝',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学涛',
+                                                                  info: '学涛19710203配岳庄岳氏桂梓19750609',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学坡',
+                                                                  info: '学坡19580524配朵庄段氏玉娥19571116',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -7401,17 +7918,40 @@ export default {
                                                             {
                                                               name: '墨江',
                                                               info: '三墨江19580725居吉林九台配郝氏凤兰19530216',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学远',
+                                                                  info: '学远19830728配李氏伟19840217',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '墨亮',
                                                               info: '次墨亮19540902配李氏春花19550728',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学宝',
+                                                                  info: '学宝19830203配于氏雪蔚19840917',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '墨杰',
                                                               info: '长墨杰19361008配韩氏桂荣19440413',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学峰',
+                                                                  info: '次学峰',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学山',
+                                                                  info: '长学山19680326字金配李氏秀丽19671202',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -7501,12 +8041,34 @@ export default {
                                                             {
                                                               name: '墨兵',
                                                               info: '次墨兵19861019（小张庄）配务头冯氏立娜19870706',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '金晨',
+                                                                  info: '金晨20210222',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '奥威',
+                                                                  info: '女奥威20101231',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '墨岗',
                                                               info: '长墨岗19801220（小张庄）配焦庄冯氏墨娥19770214',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '金彤',
+                                                                  info: '女金彤20161117',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '金硕',
+                                                                  info: '金硕20040131',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -7589,7 +8151,18 @@ export default {
                                                             {
                                                               name: '华',
                                                               info: '华811024配朵庄段氏丙纳831129',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学磊',
+                                                                  info: '学磊20140409',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '可鑫',
+                                                                  info: '女可鑫20110126',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -7603,7 +8176,18 @@ export default {
                                                             {
                                                               name: '墨刚',
                                                               info: '墨刚19750204配玉庄张兰荣19750411',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学政',
+                                                                  info: '学政20070502',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '雯雯',
+                                                                  info: '女雯雯20001209',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -7653,7 +8237,23 @@ export default {
                                                             {
                                                               name: '墨举',
                                                               info: '墨举19581222配玉庄赵氏秀梅19570812',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '',
+                                                                  info: '女学娟适冠县清泉街道杨村许新建为室',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '',
+                                                                  info: '次学武19830927配西吕庄许氏娟19851004',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学文',
+                                                                  info: '长学文19811205配十里营李氏桂敏19790411',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -7676,7 +8276,18 @@ export default {
                                                             {
                                                               name: '墨强',
                                                               info: '墨强19771220配西吕庄冯氏云彩19751010',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学谦',
+                                                                  info: '次学谦20130209',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学瑞',
+                                                                  info: '长学瑞20021209',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '爱梅',
@@ -7831,7 +8442,23 @@ export default {
                                                             {
                                                               name: '李保奎',
                                                               info: '嗣子李保奎19620502配本村申氏保勤19560422',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '李晶',
+                                                                  info: '次女李晶19890207适本村申海龙为室',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '李岩',
+                                                                  info: '长女李岩19861007适菏泽陈满意为室',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '李威',
+                                                                  info: '李威',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -7928,7 +8555,13 @@ export default {
                                                             {
                                                               name: '墨坤',
                                                               info: '长墨坤20630621配王村程氏凤菊20611208',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学明',
+                                                                  info: '学明配19910102东古城乜村高氏兴19901019',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -7950,7 +8583,13 @@ export default {
                                                             {
                                                               name: '墨林',
                                                               info: '墨林配吕庄刘氏',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学顺',
+                                                                  info: '学顺19770925配梁辛庄梁氏梅青19760926',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -7964,7 +8603,19 @@ export default {
                                                             {
                                                               name: '墨卿',
                                                               info: '墨卿配谢家海陈氏沫香',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '学芳',
+                                                                  info: '次学芳19521208教育组校长配贾六庄王凤璋之女书先19520416',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '学海',
+                                                                  info: '长学海19470407配岳庄岳氏芝恩19470614',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -8718,7 +9369,13 @@ export default {
                                                               name: '海坤',
                                                               info: '海坤19661106本科配朵庄葛氏木景19640304',
                                                               star: true,
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子镇',
+                                                                  info: '子镇19900216配刘氏翠翠19890727',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -8783,7 +9440,28 @@ export default {
                                                             {
                                                               name: '海庆',
                                                               info: '海庆19570126配白集郭氏妹先再配贾镇王氏玉莲',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子强',
+                                                                  info: '三子强19851115配程村刘氏玉华19871208',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子国',
+                                                                  info: '次子国19830917配槐木元蒋氏玉芳19860307',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子会',
+                                                                  info: '女子会适菏泽刘凤雷为室',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子民',
+                                                                  info: '长子民19790430配西开蒋氏俊菊19800208',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -9135,18 +9813,44 @@ export default {
                                                               name: '海彦',
                                                               info: '三海彦19720319转业西安工作配庞氏莲花19770321',
                                                               star: true,
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '悦衫',
+                                                                  info: '女悦衫20020521本科',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海法',
                                                               info: '次海法19660814配程村穆氏巧玲19690109',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '晓珂',
+                                                                  info: '女晓珂20081029',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子明',
+                                                                  info: '子明20030328菏泽学院本科',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海龙',
                                                               info: '长海龙19640311西安肿瘤医院配本村王氏建娥19631204',
                                                               star: true,
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '鲁秦',
+                                                                  info: '鲁秦19890301本科配刘氏菲19920930',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -9232,12 +9936,30 @@ export default {
                                                             {
                                                               name: '海成',
                                                               info: '次海成配本村韩氏明会750305',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子涵',
+                                                                  info: '子涵20100101',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '永璐',
+                                                                  info: '女永璐20001021本科',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海川',
                                                               info: '长海川19720123配本村王氏迠军19681012',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子盟',
+                                                                  info: '子盟19961112',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -9251,17 +9973,70 @@ export default {
                                                             {
                                                               name: '海军',
                                                               info: '三海军19570312配丁庄郭氏丁帅19520812',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '敬',
+                                                                  info: '次女敬19851211适白集于子彪为室',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '荣霞',
+                                                                  info: '长女荣霞19760102适本村韩明旺为室',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子孝',
+                                                                  info: '次子孝19890807配菏泽刘氏敏19901001',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子义',
+                                                                  info: '长子义19810922配杨胡疃杨氏敬梅19791005',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海盈',
                                                               info: '次海盈19520505配小张庄颜氏丁女19500311',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '荣芳',
+                                                                  info: '女荣芳19750908适程村刘洪彬为室',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子飞',
+                                                                  info: '次子飞19781116配阳谷姚氏青19780816',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子忠',
+                                                                  info: '长子忠19730219配朵庄李氏焕伟19710625',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海云',
                                                               info: '长海云19441001配杨胡疃刘氏风芝19450605',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子龙',
+                                                                  info: '三子龙19701112配杨马庄刘氏秀莲19721010',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子顺',
+                                                                  info: '次子顺19680120配东开河头岳氏兰芳19690204',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子辉',
+                                                                  info: '长子辉19620620配朵庄王氏子芳19650408',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -9285,7 +10060,37 @@ export default {
                                                             {
                                                               name: '海朋',
                                                               info: '海朋19450920配仁二庄韩氏凤兰19470913',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子正',
+                                                                  info: '子正19830424本科高工配宋氏会英19831017硕士',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '荣环',
+                                                                  info: '四女荣环19800328适梁辛庄梁中喜为室',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '荣梅',
+                                                                  info: '三女荣梅19780610硕士汇源果汁研发部适淄博任玉海为室',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '荣真',
+                                                                  info: '次女荣真19750514本科县医院儿科主任适许文利为室',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '荣芝',
+                                                                  info: '长女荣芝19720818本科赣州银行普惠金融部副总经理适赣州市张良为室',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -9317,7 +10122,13 @@ export default {
                                                             {
                                                               name: '海伟',
                                                               info: '海伟19551010配马氏丽艳19550605',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '思',
+                                                                  info: '思19840210配李氏月丽19830406',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -9408,17 +10219,45 @@ export default {
                                                             {
                                                               name: '海国',
                                                               info: '三海国19830301配刘氏海彦19840301',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子然',
+                                                                  info: '子然20080529',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海顺',
                                                               info: '次海顺19800126配段氏庆云19790129',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子琦',
+                                                                  info: '次子琦20100429',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子童',
+                                                                  info: '长子童20031008',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海东',
                                                               info: '长海东19710520配赵氏翠苓19650716',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子丁',
+                                                                  info: '次子丁20090116',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子朋',
+                                                                  info: '长子朋19950901配武氏淇淇19990927',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -9441,27 +10280,88 @@ export default {
                                                             {
                                                               name: '海林',
                                                               info: '五海林19741129冠县市场监督管理局配葛氏云霞19760912',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '佳坤',
+                                                                  info: '次女佳坤20170618',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '晓艺',
+                                                                  info: '长女晓艺20010320',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海青',
                                                               info: '四海青19720127配东吕庄马氏云19730524',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子硕',
+                                                                  info: '子硕20061210',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '艳鑫',
+                                                                  info: '女艳鑫20000509',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海臣',
                                                               info: '三海臣19690228配许家村许氏桂书19660301',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子凯',
+                                                                  info: '子凯19930727硕士研究生，山东农行总行',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海忠',
                                                               info: '次海忠19651030配陈贯庄张氏凤环19610417',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子双',
+                                                                  info: '次子双19901025配菏泽单县李氏想19900309',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子阳',
+                                                                  info: '长子阳19880601本科配山西吕梁张氏晓瑞19901126',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海民',
                                                               info: '长海民19580825配五岔路安氏秀环19960101',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子兵',
+                                                                  info: '子兵19881122本科配杨胡疃杨氏晓萌19871105',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '艳红',
+                                                                  info: '次女艳红19810109本科',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '艳静',
+                                                                  info: '长女艳静19851108本科',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -9484,12 +10384,34 @@ export default {
                                                             {
                                                               name: '海山',
                                                               info: '次海山19750316配李氏书霞19731128',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子川',
+                                                                  info: '子川20110322',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '艳贺',
+                                                                  info: '次女艳贺20050315',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '颜飞',
+                                                                  info: '长女颜飞19981110',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海峰',
                                                               info: '长海峰配玉庄赵氏桂芝19660926',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子虎',
+                                                                  info: '子虎19910310配江西上饶朱氏英19910411本科',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -9537,12 +10459,40 @@ export default {
                                                             {
                                                               name: '海涛',
                                                               info: '次海涛19620820配梁辛庄梁氏沬真19600915',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子周',
+                                                                  info: '子周19871129配西吕庄许氏海纳19890528',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '艳敏',
+                                                                  info: '女艳敏19830106硕士研究生上海铁路公安局适徐陈羽为室',
+                                                                  star: true,
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海波',
                                                               info: '长海波19550410配丁庄郭氏丁凡19500812',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '艳霞',
+                                                                  info: '次女艳霞19811208适二十里铺肖书刚为室',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子勇',
+                                                                  info: '子勇19790614配务头冯氏凤娥19781207',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '艳芳',
+                                                                  info: '长女艳芳19761107适岳庄岳宗周为室',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -9582,7 +10532,18 @@ export default {
                                                             {
                                                               name: '海腾',
                                                               info: '海腾19820926配大花园头赵氏国敬19820921',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子航',
+                                                                  info: '次子航20101205',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子晗',
+                                                                  info: '长子晗20050912',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '晓飞',
@@ -9639,12 +10600,29 @@ export default {
                                                             {
                                                               name: '海付',
                                                               info: '次海付19820701配滕州张氏玉红19870102',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '嘉禾',
+                                                                  info: '女嘉禾20170305',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子辰',
+                                                                  info: '子辰20120130',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海强',
                                                               info: '长海强19800922配桑桥王秀青19800620',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子超',
+                                                                  info: '子超20040914',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
@@ -9658,17 +10636,50 @@ export default {
                                                             {
                                                               name: '海岗',
                                                               info: '三海岗19790828配赵辛庄朱氏秀芝19790810',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子坤',
+                                                                  info: '次子坤20090604',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子豪',
+                                                                  info: '长子豪20040521',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海生',
                                                               info: '次海生19771022配本村孔氏栓起之女立军19760111',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子春',
+                                                                  info: '子春20080303',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '明明',
+                                                                  info: '女明明20001230',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                             {
                                                               name: '海全',
                                                               info: '长海全19760209配朵庄李氏巧燕19750121',
-                                                              children: [],
+                                                              children: [
+                                                                {
+                                                                  name: '子宇',
+                                                                  info: '次子宇20090304',
+                                                                  children: [],
+                                                                },
+                                                                {
+                                                                  name: '子亮',
+                                                                  info: '长子亮19991216',
+                                                                  children: [],
+                                                                },
+                                                              ],
                                                             },
                                                           ],
                                                           generation: '十五世',
