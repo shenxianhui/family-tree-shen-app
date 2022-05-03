@@ -2,11 +2,12 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2022-04-30 22:09:39
+ * @LastEditTime: 2022-05-03 19:49:35
  * @Description: 树形图
  */
 import * as echarts from '../../ec-canvas/echarts';
 import ancestors from '../../assets/data/ancestors-tree';
+import { formatTreeData } from '../../utils/util';
 
 let myChart = null;
 let option = {
@@ -48,7 +49,7 @@ let option = {
         },
         width: 70,
         height: 30,
-				borderRadius: 4,
+        borderRadius: 4,
         backgroundColor: '#3496eb',
       },
       labelLayout: {
@@ -60,45 +61,33 @@ let option = {
         width: 1,
         type: 'solid',
       },
-      data: initTreeData([ancestors]),
+      data: formatTreeData([ancestors], 1, null, initTreeData),
     },
   ],
   animation: false,
 };
 
 // 数据格式化
-function initTreeData(list, parent = {}) {
-  let tmp = [];
+function initTreeData(data) {
+  let color = '#3496eb';
 
-  if (list && list.length) {
-    tmp = list.map(item => {
-      let color = '#3496eb';
-
-      if (item.sex == 1) {
-        color = '#5fbcff';
-        if (item.star) {
-          color = '#527efb';
-        }
-      } else {
-        color = '#fb7f50';
-        if (item.star) {
-          color = '#f35835';
-        }
-      }
-
-      return Object.assign({}, item, {
-        // name: item.name.split('').join('\n'),
-        formatName: item.name,
-        parent,
-        label: {
-          backgroundColor: color,
-        },
-        children: initTreeData(item.children, item),
-      });
-    });
+  if (data.sex == 1) {
+    color = '#5fbcff';
+    if (data.star) {
+      color = '#527efb';
+    }
+  } else {
+    color = '#fb7f50';
+    if (data.star) {
+      color = '#f35835';
+    }
   }
 
-  return tmp;
+  return {
+    label: {
+      backgroundColor: color,
+    },
+  };
 }
 
 Page({

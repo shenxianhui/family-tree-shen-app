@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2022-04-30 22:09:19
+ * @LastEditTime: 2022-05-03 20:23:31
  * @Description: 树形图
  */
 import * as echarts from '../../ec-canvas/echarts';
@@ -235,7 +235,7 @@ function getQua(list) {
           increase: 0,
         };
       }
-      peopleNumList[item.class - 1].name = item.generation;
+      peopleNumList[item.class - 1].name = item.level;
       peopleNumList[item.class - 1].value++;
       if (item.class > 1) {
         peopleNumList[item.class - 1].increase = Number(

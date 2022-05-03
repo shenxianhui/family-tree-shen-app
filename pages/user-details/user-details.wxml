@@ -3,7 +3,7 @@
   <view class="user-details-content">
     <view class="info">
       <text class="label">姓名</text>
-      <text class="value">{{ userinfo.formatName || '-' }}</text>
+      <text class="value">{{ userinfo.name || '-' }}</text>
     </view>
     <view class="info">
       <text class="label">性别</text>
@@ -15,7 +15,7 @@
     </view>
     <view class="info">
       <text class="label">代数</text>
-      <text class="value">{{ userinfo.generation || '-' }}</text>
+      <text class="value">{{ userinfo.level || '-' }}</text>
     </view>
     <view class="info">
       <text class="label">父亲</text>
@@ -23,7 +23,7 @@
     </view>
     <view class="info">
       <text class="label">孩子</text>
-      <text class="value" wx:for="{{userinfo.children}}">{{ item.formatName || '-' }}</text>
+      <text class="value" wx:for="{{userinfo.children}}">{{ item.name || '-' }}</text>
     </view>
     <view class="info">
       <text class="label">简介</text>

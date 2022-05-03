@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-09-02 14:05:52
  * @LastEditors: shenxh
- * @LastEditTime: 2022-04-29 17:17:31
+ * @LastEditTime: 2022-05-03 20:22:45
  * @Description: 用户详情
  */
 
@@ -15,26 +15,22 @@ Page({
     const eventChannel = this.getOpenerEventChannel();
 
     eventChannel.on('data', data => {
-      console.log(data);
-      let userinfo = { ...data };
-
-      wx.setNavigationBarTitle({
-        title: data.formatName + '个人资料',
-      });
-      userinfo.children = userinfo.children.map(item => {
-        return Object.assign(item, {
-          children: [],
-          // children: item.children.map(item1 => {
-          //   return Object.assign(item1, {
-          //     children: []
-          //   });
-          // })
-        });
-      });
-
       this.setData({
-        userinfo,
+        userinfo: data,
       });
+      // const { name, children = [] } = data;
+
+      // wx.setNavigationBarTitle({
+      //   title: name + '个人资料',
+      // });
+      // this.data.userinfo.children = children.map(item => {
+      //   return {
+      //     ...item,
+      //     children: null,
+      //   };
+      // });
+			// console.log(this.data.userinfo);
+
     });
   },
   // 页面出现在前台时执行
