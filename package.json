@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/shenxianhui/family-tree-shen/issues"
   },
-  "homepage": "https://github.com/shenxianhui/family-tree-shen#readme"
+  "homepage": "https://github.com/shenxianhui/family-tree-shen#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.10.3"
+  }
 }
