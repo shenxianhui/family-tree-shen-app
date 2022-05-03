@@ -19,7 +19,7 @@
     </view>
     <view class="info">
       <text class="label">父亲</text>
-      <text class="value">{{ userinfo.parent.name || '-' }}</text>
+      <text class="value">{{ userinfo.parent || '-' }}</text>
     </view>
     <view class="info">
       <text class="label">孩子</text>

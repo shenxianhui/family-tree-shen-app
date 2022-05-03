@@ -29,14 +29,15 @@ const formatTreeData = (list, level = 1, parent = null, cb) => {
 
   const data = list.map(item => {
     const { info, name } = item;
+    const completeName = '申' + item.name;
     info.trim();
     let userInfo = {
-      name: '申' + item.name,
+      name: completeName,
       sex: 1, // 1男 2女
       birthday: null, // 生日
       level, // 代数
       parent, // 父亲
-      children: formatTreeData(item.children, level + 1, item, cb),
+      children: formatTreeData(item.children, level + 1, completeName, cb),
     };
     let numReg = /\d+/g;
     const birthdayList = info.match(numReg);
