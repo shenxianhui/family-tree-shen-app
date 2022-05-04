@@ -8,18 +8,21 @@
   padding-bottom: env(safe-area-inset-bottom);
   .course-content {
     .course-card {
-			padding: 40rpx;
+      padding: 40rpx;
       border-radius: 20rpx;
       background-color: #fff;
       box-shadow: 0 8rpx 12rpx #ebedf0;
-			line-height: 1.5;
+      line-height: 1.5;
       &:not(:last-child) {
         margin-bottom: 40rpx;
       }
-			.title {
-				color: #333;
-				font-size: 40rpx;
-			}
+      .title {
+        color: #333;
+        font-size: 40rpx;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
     }
   }
 }

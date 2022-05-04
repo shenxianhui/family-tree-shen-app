@@ -1,0 +1,88 @@
+<view class="course-det">
+	<view class="course-det-content">
+		<text wx:if="{{data.title}}" class="h1" user-select>{{ data.title }}</text>
+		<text wx:if="{{data.illustration}}" class="illustration" user-select>{{ data.illustration }}</text>
+		<text wx:if="{{data.content}}" class="p {{data.align}}">{{ data.content }}</text>
+		<view wx:if="{{data.list}}" class="content-list">
+			<view wx:for="{{data.list}}" wx:key="index" class="content-list-item">
+				<text wx:if="{{item.title}}" class="h3">{{ item.title }}</text>
+				<text wx:if="{{item.content}}" class="p {{item.align}}">{{ item.content }}</text>
+				<image
+					wx:if="{{item.image}}"
+					src="{{item.image}}"
+					mode="aspectFit"
+					show-menu-by-longpress
+					bindtap="handlePreviewImage"
+					data-data="{{item}}"
+				></image>
+				<view wx:if="{{item.table && item.tableKeys}}" class="table-wrap">
+					<view class="table">
+						<view class="tr">
+							<view
+								wx:for="{{item.tableKeys}}"
+								wx:for-item="thItm"
+								wx:for-index="thIdx"
+								wx:key="thIdx"
+								class="th"
+							>{{ thItm }}</view>
+						</view>
+						<view class="tbody">
+							<view
+							wx:for="{{item.table}}"
+							wx:for-item="trItm"
+							wx:for-index="trIdx"
+							wx:key="trIdx" class="tr {{trIdx % 2 === 0 ? '' : 'bg-g'}}">
+								<view
+									wx:for="{{item.tableKeys}}"
+									wx:for-item="tdItm"
+									wx:for-index="tdIdx"
+									wx:key="tdIdx"
+									class="td"
+								>{{ trItm[tdItm] }}</view>
+							</view>
+						</view>
+					</view>
+					<view class="table-total">共计{{item.table.length}}人</view>
+				</view>
+				<view wx:if="{{item.source}}" class="p source">
+					<text
+						wx:for="{{item.source}}"
+						wx:for-item="sourceItm"
+						wx:for-index="sourceIdx"
+						wx:key="sourceIdx"
+						class="p"
+					>{{ sourceItm.content }}</text>
+				</view>
+				<view wx:if="{{item.list}}" class="content-list">
+					<view
+						wx:for="{{item.list}}"
+						wx:for-item="item1"
+						wx:for-index="index1"
+						wx:key="index1"
+						class="content-list-item"
+					>
+						<text wx:if="{{item1.title}}" class="h4">{{ item1.title }}</text>
+						<text wx:if="{{item1.content}}" class="p {{item1.align}}">{{ item1.content }}</text>
+						<image
+							wx:if="{{item1.image}}"
+							src="{{item1.image}}"
+							mode="aspectFit"
+							show-menu-by-longpress
+							bindtap="handlePreviewImage"
+							data-data="{{item1}}"
+						></image>
+						<view wx:if="{{item1.source}}" class="p source">
+							<text
+								wx:for="{{item1.source}}"
+								wx:for-item="sourceItm1"
+								wx:for-index="sourceItm1"
+								wx:key="sourceItm1"
+								class="p right"
+							>{{ sourceItm1.content }}</text>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

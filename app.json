@@ -5,6 +5,7 @@
 
     "pages/synopsis/synopsis",
     "pages/course/course",
+    "pages/course/course-det/course-det",
     "pages/statistics/statistics",
     "pages/user-details/user-details"
   ],
@@ -26,8 +27,7 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "",
     "navigationBarTextStyle": "black",
-    "navigationStyle": "custom",
-    "disableScroll": true
+    "navigationStyle": "custom"
   },
   "sitemapLocation": "sitemap.json",
   "usingComponents": {}

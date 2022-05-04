@@ -1,11 +1,51 @@
 /**app.wxss**/
+@font-face {
+  font-family: 'myFont';
+  src: url('https://636c-cloud1-2glsmv54208d242b-1311412316.tcb.qcloud.la/font/LiXuKeShuFa-1.ttf?sign=78d83ef485e87152c3fd7c733e3fdfdc&t=1651297547');
+}
+
 page {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 
-@font-face {
-  font-family: 'myFont';
-  src: url('https://636c-cloud1-2glsmv54208d242b-1311412316.tcb.qcloud.la/font/LiXuKeShuFa-1.ttf?sign=78d83ef485e87152c3fd7c733e3fdfdc&t=1651297547');
+.h1 {
+	display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 58rpx;
+	margin-top: 40rpx;
+  margin-bottom: 40rpx;
+}
+.h2 {
+	display: block;
+  font-weight: bold;
+  font-size: 50rpx;
+	margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.h3 {
+	display: block;
+  font-weight: bold;
+  font-size: 46rpx;
+	margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.h4 {
+	display: block;
+  font-weight: bold;
+  font-size: 42rpx;
+	margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.p {
+	display: block;
+  line-height: 2;
+  font-size: 40rpx;
+  text-align: justify;
+}
+.space {
+	display: inline-block;
+	width: 80rpx;
 }

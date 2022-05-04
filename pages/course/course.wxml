@@ -2,11 +2,12 @@
   <view class="course-content">
 		<view
 			wx:for="{{courseData}}"
+			wx:key="index"
 			class="course-card"
 			bindtap="handleCard"
 			data-data="{{item}}"
 		>
-			<text class="title">{{item.title}}</text>
+			<view class="title">{{item.title}}</view>
 		</view>
 	</view>
 </view>

@@ -1,15 +1,21 @@
-import courseData from '../../assets/data/course';
-
 Page({
   data: {
-    courseData,
+    data: null,
   },
 
   watch: {},
 
   /* 生命周期 */
   // 页面创建时执行
-  // onLoad(options) {},
+  onLoad(options) {
+    const eventChannel = this.getOpenerEventChannel();
+
+    eventChannel.on('data', data => {
+      this.setData({
+        data,
+      });
+    });
+  },
 
   // 页面出现在前台时执行
   // onShow() {},
@@ -42,14 +48,11 @@ Page({
   // onTabItemTap(item) {},
 
   /* 事件响应函数 */
-  handleCard(evt) {
+  handlePreviewImage(evt) {
     const { data } = evt.currentTarget.dataset;
 
-    wx.navigateTo({
-      url: '/pages/course/course-det/course-det',
-      success: res => {
-        res.eventChannel.emit('data', data);
-      },
+    wx.previewImage({
+      urls: [data.image],
     });
   },
 });
