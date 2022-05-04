@@ -23,7 +23,9 @@
     </view>
     <view class="info">
       <text class="label">孩子</text>
-      <text class="value" wx:for="{{userinfo.children}}">{{ item.name || '-' }}</text>
+      <text class="value">
+				<text class="children" wx:for="{{userinfo.children}}">{{ item.name || '-' }}</text>
+			</text>
     </view>
     <view class="info">
       <text class="label">简介</text>

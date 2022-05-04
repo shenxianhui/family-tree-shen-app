@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2022-05-03 19:49:35
+ * @LastEditTime: 2022-05-04 10:15:12
  * @Description: 树形图
  */
 import * as echarts from '../../ec-canvas/echarts';
@@ -45,9 +45,9 @@ let option = {
         // fontFamily: 'STLiti', // 华文隶书: STLiti; 楷体: KaiTi
         textStyle: {
           color: '#fff',
-          fontSize: 18,
+          fontSize: 24,
         },
-        width: 70,
+        width: 110,
         height: 30,
         borderRadius: 4,
         backgroundColor: '#3496eb',

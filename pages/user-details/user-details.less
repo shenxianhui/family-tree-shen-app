@@ -18,7 +18,7 @@
     .info {
       display: flex;
       align-items: flex-start;
-      font-size: 32rpx;
+      font-size: 40rpx;
       &:not(:last-child) {
         margin-bottom: 40rpx;
       }
@@ -29,11 +29,15 @@
         line-height: 1.5;
       }
       .value {
+				display: flex;
+				flex-wrap: wrap;
         color: #999;
         line-height: 1.5;
-        &:not(:last-child) {
-          margin-right: 20rpx;
-        }
+				.children {
+					&:not(:last-child) {
+						margin-right: 20rpx;
+					}
+				}
       }
     }
   }

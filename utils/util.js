@@ -29,7 +29,8 @@ const formatTreeData = (list, level = 1, parent = null, cb) => {
 
   const data = list.map(item => {
     const { info, name } = item;
-    const completeName = '申' + item.name;
+    const completeName =
+      item.name === '女适' && item.name.length < 4 ? item.name : '申' + item.name;
     info.trim();
     let userInfo = {
       name: completeName,
@@ -39,16 +40,27 @@ const formatTreeData = (list, level = 1, parent = null, cb) => {
       parent, // 父亲
       children: formatTreeData(item.children, level + 1, completeName, cb),
     };
-    let numReg = /\d+/g;
+
+    const numReg = /\d+/g;
     const birthdayList = info.match(numReg);
 
     // 性别
-    if (info.split(name)[0].includes('女')) {
+    if ((info.includes('女') && info.includes('适')) || info.slice(0, 2).includes('女')) {
       userInfo.sex = 2;
     }
     // 生日
     if (birthdayList && birthdayList.length) {
-      userInfo.birthday = birthdayList[0];
+			let birthday = birthdayList[0]
+
+			if (birthday) {
+				if (birthday.length === 6) {
+					birthday = birthday.slice(0, 4) + '-' + birthday.slice(4, 6)
+				}
+				if (birthday.length === 8) {
+					birthday = birthday.slice(0, 4) + '-' + birthday.slice(4, 6) + '-' + birthday.slice(6, 8)
+				}
+			}
+      userInfo.birthday = birthday;
     }
 
     return {
