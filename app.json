@@ -2,9 +2,9 @@
   "pages": [
     "pages/home/home",
     "pages/genealogy/genealogy",
-    "pages/course/course",
-		
+
     "pages/synopsis/synopsis",
+    "pages/course/course",
     "pages/statistics/statistics",
     "pages/user-details/user-details"
   ],
@@ -18,10 +18,6 @@
       {
         "pagePath": "pages/genealogy/genealogy",
         "text": "族谱"
-      },
-      {
-        "pagePath": "pages/course/course",
-        "text": "历程"
       }
     ]
   },

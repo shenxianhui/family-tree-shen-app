@@ -69,7 +69,7 @@ Page({
         break;
       // 历程
       case 3:
-        wx.switchTab({
+        wx.navigateTo({
           url: '/pages/course/course',
         });
         break;

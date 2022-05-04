@@ -1,3 +1,12 @@
 <view class="course">
-  New Page
+  <view class="course-content">
+		<view
+			wx:for="{{courseData}}"
+			class="course-card"
+			bindtap="handleCard"
+			data-data="{{item}}"
+		>
+			<text class="title">{{item.title}}</text>
+		</view>
+	</view>
 </view>

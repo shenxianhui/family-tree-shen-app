@@ -1,5 +1,9 @@
+import courseData from '../../assets/data/course';
+
 Page({
-  data: {},
+  data: {
+    courseData,
+  },
 
   watch: {},
 
@@ -11,11 +15,7 @@ Page({
   // onShow() {},
 
   // 页面首次渲染完毕时执行
-  onReady() {
-    wx.setNavigationBarTitle({
-      title: ''
-    })
-  },
+  // onReady() {},
 
   // 页面从前台变为后台时执行
   // onHide() {},
@@ -42,4 +42,15 @@ Page({
   // onTabItemTap(item) {},
 
   /* 事件响应函数 */
-})
+  handleCard(evt) {
+    const { data } = evt.currentTarget.dataset;
+
+    console.log(data);
+    wx.navigateTo({
+      url: '/pages/course-det/course-det',
+      success: res => {
+        res.eventChannel.emit('data', data);
+      },
+    });
+  },
+});

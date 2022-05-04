@@ -1,1 +1,1 @@
-/* pages/course/course.wxss */
+.course{box-sizing:border-box;height:100%;padding:30rpx;background:#f7f8fa;overflow:auto;padding-bottom:constant(safe-area-inset-bottom);padding-bottom:env(safe-area-inset-bottom)}.course .course-content .course-card{padding:40rpx;border-radius:20rpx;background-color:#fff;box-shadow:0 8rpx 12rpx #ebedf0;line-height:1.5}.course .course-content .course-card:not(:last-child){margin-bottom:40rpx}.course .course-content .course-card .title{color:#333;font-size:40rpx}
