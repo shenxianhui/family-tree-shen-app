@@ -53,24 +53,26 @@ Page({
   /* 事件响应函数 */
   handleCover(evt) {
     const { menuIdx } = evt.currentTarget.dataset;
-    let url = '';
 
     switch (menuIdx) {
       // 族谱
       case 1:
-        url = '/pages/genealogy/genealogy';
+        wx.switchTab({
+          url: '/pages/genealogy/genealogy',
+        });
         break;
-      // 概况
+      // 简介
       case 2:
-        url = '/pages/statistics/statistics';
+        wx.navigateTo({
+          url: '/pages/synopsis/synopsis',
+        });
         break;
       // 历程
       case 3:
-        url = '/pages/course/course';
+        wx.switchTab({
+          url: '/pages/course/course',
+        });
         break;
     }
-    wx.switchTab({
-      url,
-    });
   },
 });

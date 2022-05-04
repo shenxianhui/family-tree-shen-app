@@ -2,9 +2,10 @@
   "pages": [
     "pages/home/home",
     "pages/genealogy/genealogy",
-    "pages/statistics/statistics",
     "pages/course/course",
-
+		
+    "pages/synopsis/synopsis",
+    "pages/statistics/statistics",
     "pages/user-details/user-details"
   ],
   "tabBar": {
@@ -19,10 +20,6 @@
         "text": "族谱"
       },
       {
-        "pagePath": "pages/statistics/statistics",
-        "text": "概况"
-      },
-      {
         "pagePath": "pages/course/course",
         "text": "历程"
       }
@@ -31,7 +28,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle": "black",
     "navigationStyle": "custom",
     "disableScroll": true
