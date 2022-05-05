@@ -4,6 +4,7 @@
     "pages/_demo-page/index",
 
     "pages/genealogy/genealogy",
+    "pages/synopsis/synopsis",
     "pages/course/course",
     "pages/course/course-det/course-det",
     "pages/statistics/statistics",

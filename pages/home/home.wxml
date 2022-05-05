@@ -12,8 +12,8 @@
     <!-- <view class="title" style="{{titleStyle}}">申氏族谱</view> -->
     <view class="title">申氏族谱</view>
     <view class="name">
-      <text class="name-item">著</text>
       <text class="name-item">申贤慧</text>
+      <text class="name-item">著</text>
     </view>
   </view>
   <view class="menu">
