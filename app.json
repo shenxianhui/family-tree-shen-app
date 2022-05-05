@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/genealogy/genealogy",
+    "pages/_demo-page/index",
 
-    "pages/synopsis/synopsis",
+    "pages/genealogy/genealogy",
     "pages/course/course",
     "pages/course/course-det/course-det",
     "pages/statistics/statistics",
@@ -17,8 +17,8 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/genealogy/genealogy",
-        "text": "族谱"
+        "pagePath": "pages/_demo-page/index",
+        "text": "模板页"
       }
     ]
   },

@@ -57,7 +57,7 @@ Page({
     switch (menuIdx) {
       // 族谱
       case 1:
-        wx.switchTab({
+        wx.navigateTo({
           url: '/pages/genealogy/genealogy',
         });
         break;
