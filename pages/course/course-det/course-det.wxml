@@ -3,6 +3,15 @@
 		<text wx:if="{{data.title}}" class="h1" user-select>{{ data.title }}</text>
 		<text wx:if="{{data.illustration}}" class="illustration" user-select>{{ data.illustration }}</text>
 		<text wx:if="{{data.content}}" class="p {{data.align}}">{{ data.content }}</text>
+		<view wx:if="{{data.source}}" class="p source">
+			<text
+				wx:for="{{data.source}}"
+				wx:for-item="sourceItm"
+				wx:for-index="sourceIdx"
+				wx:key="sourceIdx"
+				class="p"
+			>{{ sourceItm.content }}</text>
+		</view>
 		<view wx:if="{{data.list}}" class="content-list">
 			<view wx:for="{{data.list}}" wx:key="index" class="content-list-item">
 				<text wx:if="{{item.title}}" class="h3">{{ item.title }}</text>
@@ -47,11 +56,11 @@
 				<view wx:if="{{item.source}}" class="p source">
 					<text
 						wx:for="{{item.source}}"
-						wx:for-item="sourceItm"
-						wx:for-index="sourceIdx"
-						wx:key="sourceIdx"
+						wx:for-item="sourceItm1"
+						wx:for-index="sourceIdx1"
+						wx:key="sourceIdx1"
 						class="p"
-					>{{ sourceItm.content }}</text>
+					>{{ sourceItm1.content }}</text>
 				</view>
 				<view wx:if="{{item.list}}" class="content-list">
 					<view
@@ -74,11 +83,11 @@
 						<view wx:if="{{item1.source}}" class="p source">
 							<text
 								wx:for="{{item1.source}}"
-								wx:for-item="sourceItm1"
-								wx:for-index="sourceItm1"
-								wx:key="sourceItm1"
+								wx:for-item="sourceItm2"
+								wx:for-index="sourceIdx2"
+								wx:key="sourceIdx2"
 								class="p right"
-							>{{ sourceItm1.content }}</text>
+							>{{ sourceItm2.content }}</text>
 						</view>
 					</view>
 				</view>
