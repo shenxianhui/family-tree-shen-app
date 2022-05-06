@@ -1,0 +1,11 @@
+<view class="menu-left">
+	<view
+		wx:for="{{list}}"
+		wx:for-item="item"
+		wx:for-index="index"
+		wx:key="sourceIdx1"
+		class="button"
+		bindtap="handleBtn"
+		data-data="{{item}}"
+	>{{item.name}}</view>
+</view>

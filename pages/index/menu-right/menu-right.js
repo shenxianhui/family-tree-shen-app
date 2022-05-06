@@ -1,4 +1,4 @@
-import courseData from '../../assets/data/course';
+import courseData from '../../../assets/data/course';
 
 Page({
   data: {
@@ -46,7 +46,7 @@ Page({
     const { data } = evt.currentTarget.dataset;
 
     wx.navigateTo({
-      url: '/pages/course/course-det/course-det',
+      url: '/pages/index/menu-right/content-det/content-det',
       success: res => {
         res.eventChannel.emit('data', data);
       },

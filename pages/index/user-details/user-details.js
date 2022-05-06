@@ -37,7 +37,7 @@ Page({
   onShareAppMessage() {
     return {
       title: '申氏族谱',
-      path: '/pages/home/home',
+      path: '/pages/index/index',
     };
   },
 
@@ -45,7 +45,7 @@ Page({
   onShareTimeline() {
     return {
       title: '申氏族谱',
-      query: '/pages/home/home',
+      query: '/pages/index/index',
     };
   },
 });

@@ -29,7 +29,7 @@ Page({
   onShareAppMessage() {
     return {
       title: '申氏族谱',
-      path: '/pages/home/home',
+      path: '/pages/index/index',
     };
   },
 
@@ -37,7 +37,7 @@ Page({
   onShareTimeline() {
     return {
       title: '申氏族谱',
-      query: '/pages/home/home',
+      query: '/pages/index/index',
     };
   },
 
@@ -58,19 +58,19 @@ Page({
       // 族谱
       case 1:
         wx.navigateTo({
-          url: '/pages/genealogy/genealogy',
+          url: '/pages/index/menu-main/menu-main',
         });
         break;
       // 碧霄
       case 2:
         wx.navigateTo({
-          url: '/pages/synopsis/synopsis',
+          url: '/pages/index/menu-left/menu-left',
         });
         break;
       // 琳琅
       case 3:
         wx.navigateTo({
-          url: '/pages/course/course',
+          url: '/pages/index/menu-right/menu-right',
         });
         break;
     }

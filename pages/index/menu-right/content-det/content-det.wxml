@@ -2,7 +2,7 @@
 	<view class="course-det-content">
 		<text wx:if="{{data.title}}" class="h1" user-select>{{ data.title }}</text>
 		<text wx:if="{{data.illustration}}" class="illustration" user-select>{{ data.illustration }}</text>
-		<text wx:if="{{data.content}}" class="p {{data.align}}">{{ data.content }}</text>
+		<text wx:if="{{data.content}}" class="p {{data.align}}" user-select>{{ data.content }}</text>
 		<view wx:if="{{data.source}}" class="p source">
 			<text
 				wx:for="{{data.source}}"
@@ -10,12 +10,13 @@
 				wx:for-index="sourceIdx"
 				wx:key="sourceIdx"
 				class="p"
+				user-select
 			>{{ sourceItm.content }}</text>
 		</view>
 		<view wx:if="{{data.list}}" class="content-list">
 			<view wx:for="{{data.list}}" wx:key="index" class="content-list-item">
-				<text wx:if="{{item.title}}" class="h3">{{ item.title }}</text>
-				<text wx:if="{{item.content}}" class="p {{item.align}}">{{ item.content }}</text>
+				<text wx:if="{{item.title}}" class="h3" user-select>{{ item.title }}</text>
+				<text wx:if="{{item.content}}" class="p {{item.align}}" user-select>{{ item.content }}</text>
 				<image
 					wx:if="{{item.image}}"
 					src="{{item.image}}"
@@ -60,6 +61,7 @@
 						wx:for-index="sourceIdx1"
 						wx:key="sourceIdx1"
 						class="p"
+						user-select
 					>{{ sourceItm1.content }}</text>
 				</view>
 				<view wx:if="{{item.list}}" class="content-list">
@@ -70,8 +72,8 @@
 						wx:key="index1"
 						class="content-list-item"
 					>
-						<text wx:if="{{item1.title}}" class="h4">{{ item1.title }}</text>
-						<text wx:if="{{item1.content}}" class="p {{item1.align}}">{{ item1.content }}</text>
+						<text wx:if="{{item1.title}}" class="h4" user-select>{{ item1.title }}</text>
+						<text wx:if="{{item1.content}}" class="p {{item1.align}}" user-select>{{ item1.content }}</text>
 						<image
 							wx:if="{{item1.image}}"
 							src="{{item1.image}}"
@@ -87,6 +89,7 @@
 								wx:for-index="sourceIdx2"
 								wx:key="sourceIdx2"
 								class="p right"
+								user-select
 							>{{ sourceItm2.content }}</text>
 						</view>
 					</view>

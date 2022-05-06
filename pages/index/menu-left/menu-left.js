@@ -1,5 +1,13 @@
 Page({
-  data: {},
+  data: {
+    list: [
+      {
+        name: '统计',
+        id: 0,
+        page: '/pages/index/menu-left/statistics/statistics',
+      },
+    ],
+  },
 
   watch: {},
 
@@ -38,4 +46,11 @@ Page({
   // onTabItemTap(item) {},
 
   /* 事件响应函数 */
-})
+  handleBtn(evt) {
+    const { data } = evt.currentTarget.dataset;
+
+    wx.navigateTo({
+      url: data.page,
+    });
+  },
+});

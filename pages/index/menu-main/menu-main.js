@@ -2,13 +2,13 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2022-05-06 15:11:46
+ * @LastEditTime: 2022-05-06 16:13:27
  * @Description: 树形图
  */
-import * as echarts from '../../ec-canvas/echarts';
-import ancestors from '../../assets/data/ancestors-tree';
-import Dialog from '../../miniprogram_npm/@vant/weapp/dialog/dialog';
-import { formatTreeData } from '../../utils/util';
+import * as echarts from '../../../ec-canvas/echarts';
+import ancestors from '../../../assets/data/ancestors-tree';
+import Dialog from '../../../miniprogram_npm/@vant/weapp/dialog/dialog';
+import { formatTreeData } from '../../../utils/util';
 
 let myChart = null;
 let option = {
@@ -136,7 +136,7 @@ Page({
   onShareAppMessage() {
     return {
       title: '申氏族谱',
-      path: '/pages/home/home',
+      path: '/pages/index/index',
     };
   },
 
@@ -144,22 +144,20 @@ Page({
   onShareTimeline() {
     return {
       title: '申氏族谱',
-      query: '/pages/home/home',
+      query: '/pages/index/index',
     };
   },
 
   // 返回按钮
   handleBack() {
-    wx.switchTab({
-      url: '/pages/home/home',
-    });
+    wx.navigateBack();
   },
 
   // 图表初始化
   initChart() {
     this.setData({
       showChartTree: true,
-			loading: true,
+      loading: true,
     });
 
     this.dispose();
@@ -184,9 +182,9 @@ Page({
         });
       });
       myChart.on('finished', () => {
-				this.setData({
-					loading: false,
-				});
+        this.setData({
+          loading: false,
+        });
       });
 
       myChart.setOption(option);

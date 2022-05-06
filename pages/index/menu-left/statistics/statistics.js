@@ -2,11 +2,11 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2022-05-03 20:23:31
+ * @LastEditTime: 2022-05-06 16:12:29
  * @Description: 树形图
  */
-import * as echarts from '../../ec-canvas/echarts';
-import ancestors from '../../assets/data/ancestors-tree';
+import * as echarts from '../../../../ec-canvas/echarts';
+import ancestors from '../../../../assets/data/ancestors-tree';
 
 let peopleNumList = [];
 let peopleQua = 0;
@@ -262,7 +262,7 @@ Page({
   onShareAppMessage() {
     return {
       title: '申氏族谱',
-      path: '/pages/home/home',
+      path: '/pages/index/index',
     };
   },
 
@@ -270,14 +270,12 @@ Page({
   onShareTimeline() {
     return {
       title: '申氏族谱',
-      query: '/pages/home/home',
+      query: '/pages/index/index',
     };
   },
 
   // 返回按钮
   handleBack() {
-    wx.switchTab({
-      url: '/pages/home/home',
-    });
+    wx.navigateBack();
   },
 });
