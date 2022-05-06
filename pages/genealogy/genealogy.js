@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2022-05-06 13:58:48
+ * @LastEditTime: 2022-05-06 15:11:46
  * @Description: 树形图
  */
 import * as echarts from '../../ec-canvas/echarts';
@@ -93,6 +93,7 @@ function initTreeData(data) {
 
 Page({
   data: {
+    loading: false,
     showChartTree: false,
     ec: {
       // 将 lazyLoad 设为 true 后，需要手动初始化图表
@@ -102,18 +103,28 @@ Page({
 
   /* 生命周期 */
   // 页面创建时执行
-  onLoad(options) {
-    Dialog.alert().then(res => {
-      this.setData({
-        showChartTree: true,
-      });
-      this.initChart();
-    });
-  },
+  // onLoad(options) {},
 
   // 页面首次渲染完毕时执行
   onReady() {
-    // this.initChart();
+    const _this = this;
+
+    wx.getStorage({
+      key: 'treeDlg',
+      success() {
+        _this.initChart();
+      },
+      fail() {
+        Dialog.alert().then(() => {
+          wx.setStorage({
+            key: 'treeDlg',
+            data: '1',
+          });
+
+          _this.initChart();
+        });
+      },
+    });
   },
 
   // 页面销毁时执行
@@ -146,6 +157,11 @@ Page({
 
   // 图表初始化
   initChart() {
+    this.setData({
+      showChartTree: true,
+			loading: true,
+    });
+
     this.dispose();
     // 获取组件
     const ecComponent = this.selectComponent('#chart-tree');
@@ -168,7 +184,9 @@ Page({
         });
       });
       myChart.on('finished', () => {
-        console.log('finished');
+				this.setData({
+					loading: false,
+				});
       });
 
       myChart.setOption(option);

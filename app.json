@@ -32,6 +32,7 @@
   },
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
+		"van-loading": "@vant/weapp/loading/index",
 		"van-dialog": "@vant/weapp/dialog/index"
 	}
 }

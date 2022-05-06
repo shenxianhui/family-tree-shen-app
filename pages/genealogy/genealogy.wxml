@@ -8,6 +8,17 @@
 		</view>
 	</van-dialog>
 
+	<view wx:if="{{loading}}" class="loading-wrap">
+		<van-loading
+			size="50rpx"
+			text-size="40rpx"
+			vertical
+			color="#1989fa"
+		>
+			<view class="loading-label">加载中...</view>
+		</van-loading>
+	</view>
+
 	<text class="back" bindtap="handleBack">返回</text>
 	<image
 		class="bg"
