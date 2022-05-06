@@ -61,13 +61,13 @@ Page({
           url: '/pages/genealogy/genealogy',
         });
         break;
-      // 简介
+      // 碧霄
       case 2:
         wx.navigateTo({
           url: '/pages/synopsis/synopsis',
         });
         break;
-      // 历程
+      // 琳琅
       case 3:
         wx.navigateTo({
           url: '/pages/course/course',

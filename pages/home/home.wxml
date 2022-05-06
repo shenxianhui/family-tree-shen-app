@@ -17,9 +17,9 @@
     </view>
   </view>
   <view class="menu">
-    <div class="menu-item" bindtap="handleCover" data-menu-idx="{{2}}">简介</div>
+    <div class="menu-item" bindtap="handleCover" data-menu-idx="{{2}}">碧霄</div>
     <div class="menu-item main" bindtap="handleCover" data-menu-idx="{{1}}">族谱</div>
-    <div class="menu-item" bindtap="handleCover" data-menu-idx="{{3}}">历程</div>
+    <div class="menu-item" bindtap="handleCover" data-menu-idx="{{3}}">琳琅</div>
   </view>
 
 	<view class="bird-wrap">
