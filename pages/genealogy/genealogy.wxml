@@ -1,10 +1,18 @@
 <!-- 树形图 -->
 <view class="tree">
+	<van-dialog id="van-dialog" use-title-slot use-slot>
+		<view class="dlg-title">提 示</view>
+		<view class="dlg-content">
+			<view>由于申氏家族过于兴旺（数据量太大），当前页可能存在卡顿现象</view>
+			<view>请勿频繁操作（缩放、拖动）</view>
+		</view>
+	</van-dialog>
+
 	<text class="back" bindtap="handleBack">返回</text>
 	<image
 		class="bg"
     mode="aspectFill"
 		src="https://636c-cloud1-2glsmv54208d242b-1311412316.tcb.qcloud.la/image/family-tree-shen/read_bg.jpg?sign=4f8c019ff978b6f02fad55f232000de4&t=1651297693"
 	></image>
-  <ec-canvas wx:if="{{!isDisposed}}" id="chart-tree" canvas-id="chart-tree" ec="{{ ec }}"></ec-canvas>
+  <ec-canvas wx:if="{{showChartTree}}" id="chart-tree" canvas-id="chart-tree" ec="{{ ec }}"></ec-canvas>
 </view>

@@ -2,11 +2,12 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2022-05-04 10:15:12
+ * @LastEditTime: 2022-05-06 13:58:48
  * @Description: 树形图
  */
 import * as echarts from '../../ec-canvas/echarts';
 import ancestors from '../../assets/data/ancestors-tree';
+import Dialog from '../../miniprogram_npm/@vant/weapp/dialog/dialog';
 import { formatTreeData } from '../../utils/util';
 
 let myChart = null;
@@ -92,15 +93,27 @@ function initTreeData(data) {
 
 Page({
   data: {
+    showChartTree: false,
     ec: {
       // 将 lazyLoad 设为 true 后，需要手动初始化图表
       lazyLoad: true,
     },
   },
 
+  /* 生命周期 */
+  // 页面创建时执行
+  onLoad(options) {
+    Dialog.alert().then(res => {
+      this.setData({
+        showChartTree: true,
+      });
+      this.initChart();
+    });
+  },
+
   // 页面首次渲染完毕时执行
   onReady() {
-    this.initChart();
+    // this.initChart();
   },
 
   // 页面销毁时执行

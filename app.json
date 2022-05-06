@@ -31,5 +31,7 @@
     "navigationStyle": "custom"
   },
   "sitemapLocation": "sitemap.json",
-  "usingComponents": {}
+  "usingComponents": {
+		"van-dialog": "@vant/weapp/dialog/index"
+	}
 }
