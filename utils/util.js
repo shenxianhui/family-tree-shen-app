@@ -24,7 +24,7 @@ const formatNumber = n => {
  * @param {function} cb 回调函数, 返回一个对象来接收其他属性
  * @return {array} 返回一个新的数组
  */
-const formatTreeData = (list, level = 1, parent = null, cb) => {
+const formatTreeData = (list, level = 1, parent = null, cb = () => {}) => {
   if (!list || !list.length) return [];
 
   const data = list.map(item => {

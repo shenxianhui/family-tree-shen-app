@@ -2,16 +2,20 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2022-05-06 16:12:29
- * @Description: 树形图
+ * @LastEditTime: 2022-05-06 17:31:43
+ * @Description: 柱状统计图
  */
 import * as echarts from '../../../../ec-canvas/echarts';
 import ancestors from '../../../../assets/data/ancestors-tree';
+import { formatTreeData } from '../../../../utils/util';
 
-let peopleNumList = [];
-let peopleQua = 0;
+let chartData = {
+  total: 0,
+  manList: [],
+  womanList: [],
+};
 
-getQua([ancestors]);
+getQua(formatTreeData([ancestors]));
 function initChart(canvas, width, height, dpr) {
   const chart = echarts.init(canvas, null, {
     width: width,
@@ -22,7 +26,7 @@ function initChart(canvas, width, height, dpr) {
 
   const option = {
     title: {
-      text: '总计: ' + peopleQua + ' 人',
+      text: '总计: ' + chartData.total + ' 人',
       textStyle: {
         color: '#fff',
         fontSize: 20,
@@ -34,7 +38,7 @@ function initChart(canvas, width, height, dpr) {
     grid: {
       top: '20%',
       left: '5%',
-      right: '5%',
+      right: '15%',
       bottom: '15%',
       containLabel: true,
     },
@@ -47,13 +51,14 @@ function initChart(canvas, width, height, dpr) {
     },
     legend: {
       top: '10%',
-      data: ['数量(人)', '增长率(%)'],
+      data: ['男', '女'],
       textStyle: {
         color: '#fff',
       },
     },
     xAxis: [
       {
+        name: '代数',
         type: 'category',
         boundaryGap: true,
         axisLine: {
@@ -76,45 +81,20 @@ function initChart(canvas, width, height, dpr) {
         axisTick: {
           show: false,
         },
-        data: peopleNumList.map(item => {
+        data: chartData.manList.map(item => {
           return item.name;
         }),
       },
     ],
     yAxis: [
       {
-        name: '数量(人)',
+        name: '数量',
         type: 'value',
         splitLine: {
           show: true,
           lineStyle: {
             color: '#848be233',
           },
-        },
-        axisLine: {
-          show: true,
-          lineStyle: {
-            color: '#848be233',
-          },
-        },
-        nameTextStyle: {
-          color: '#fff',
-        },
-        axisLabel: {
-          // margin: 20,
-          textStyle: {
-            color: '#d1e6eb',
-          },
-        },
-        axisTick: {
-          show: false,
-        },
-      },
-      {
-        name: '增长率(%)',
-        type: 'value',
-        splitLine: {
-          show: false,
         },
         axisLine: {
           show: true,
@@ -138,8 +118,9 @@ function initChart(canvas, width, height, dpr) {
     ],
     series: [
       {
-        name: '数量(人)',
+        name: '男',
         type: 'bar',
+        stack: 'total',
         // barWidth: 20,
         tooltip: {
           show: true,
@@ -163,25 +144,18 @@ function initChart(canvas, width, height, dpr) {
                 color: '#027eff',
               },
             ]),
-            barBorderRadius: 100,
+            // barBorderRadius: 100,
           },
         },
-        data: peopleNumList,
+        data: chartData.manList,
       },
       {
-        name: '增长率(%)',
-        type: 'line',
-        yAxisIndex: 1,
-        // smooth: true, //是否平滑曲线显示
-        // 			symbol:'circle',  // 默认是空心圆（中间是白色的），改成实心圆
-        showAllSymbol: true,
-        symbol: 'emptyCircle',
-        symbolSize: 6,
-        lineStyle: {
-          normal: {
-            color: '#f5804d', // 线条颜色
-          },
-          borderColor: '#f0f',
+        name: '女',
+        type: 'bar',
+        stack: 'total',
+        // barWidth: 20,
+        tooltip: {
+          show: true,
         },
         label: {
           show: true,
@@ -192,30 +166,20 @@ function initChart(canvas, width, height, dpr) {
         },
         itemStyle: {
           normal: {
-            color: '#f5804d',
-          },
-        },
-        tooltip: {
-          show: false,
-        },
-        areaStyle: {
-          //区域填充样式
-          normal: {
             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
               {
                 offset: 0,
-                color: '#fccb05',
+                color: '#ffcaca',
               },
               {
                 offset: 1,
-                color: '#fccb0500',
+                color: '#ff7070',
               },
             ]),
+            // barBorderRadius: 100,
           },
         },
-        data: peopleNumList.map(item => {
-          return item.increase;
-        }),
+        data: chartData.womanList,
       },
     ],
   };
@@ -226,26 +190,29 @@ function initChart(canvas, width, height, dpr) {
 
 function getQua(list) {
   if (list && list.length) {
-    peopleQua += list.length;
     list.forEach(item => {
-      if (!peopleNumList[item.class - 1]) {
-        peopleNumList[item.class - 1] = {
-          name: '',
-          value: 0,
-          increase: 0,
-        };
+      const level = item.level;
+
+      chartData.total++;
+
+      if (item.sex === 1) {
+        if (!chartData.manList[level - 1]) {
+          chartData.manList[level - 1] = {
+            value: 0,
+          };
+        }
+        chartData.manList[level - 1].value++;
+        chartData.manList[level - 1].name = level;
+      } else {
+        if (!chartData.womanList[level - 1]) {
+          chartData.womanList[level - 1] = {
+            value: 0,
+          };
+        }
+        chartData.womanList[level - 1].value++;
+        chartData.womanList[level - 1].name = level;
       }
-      peopleNumList[item.class - 1].name = item.level;
-      peopleNumList[item.class - 1].value++;
-      if (item.class > 1) {
-        peopleNumList[item.class - 1].increase = Number(
-          (
-            ((peopleNumList[item.class - 1].value - peopleNumList[item.class - 2].value) /
-              peopleNumList[item.class - 2].value) *
-            100
-          ).toFixed(2),
-        );
-      }
+
       getQua(item.children);
     });
   }
