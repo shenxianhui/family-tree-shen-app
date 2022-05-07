@@ -35,6 +35,7 @@ const formatTreeData = (list, level = 1, parent = null, cb = () => {}) => {
       name: completeName,
       sex: 1, // 1男 2女
       birthday: null, // 生日
+      age: null, // 年龄
       level, // 代数
       parent, // 父亲
       children: formatTreeData(item.children, level + 1, completeName, cb),
@@ -60,6 +61,16 @@ const formatTreeData = (list, level = 1, parent = null, cb = () => {}) => {
         }
       }
       userInfo.birthday = birthday;
+    }
+    // 年龄
+    if (birthdayList && birthdayList.length) {
+      if (userInfo.birthday.length >= 4) {
+        const currentYear = new Date().getFullYear();
+        const birthdayYear = Number(userInfo.birthday.split('-')[0]);
+        const age = currentYear - birthdayYear;
+
+        userInfo.age = age;
+      }
     }
 
     return {

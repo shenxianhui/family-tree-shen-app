@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2022-05-06 17:31:43
+ * @LastEditTime: 2022-05-07 09:31:49
  * @Description: 柱状统计图
  */
 import * as echarts from '../../../../ec-canvas/echarts';
@@ -202,7 +202,7 @@ function getQua(list) {
           };
         }
         chartData.manList[level - 1].value++;
-        chartData.manList[level - 1].name = level;
+        chartData.manList[level - 1].name = level + '世';
       } else {
         if (!chartData.womanList[level - 1]) {
           chartData.womanList[level - 1] = {
@@ -210,7 +210,7 @@ function getQua(list) {
           };
         }
         chartData.womanList[level - 1].value++;
-        chartData.womanList[level - 1].name = level;
+        chartData.womanList[level - 1].name = level + '世';
       }
 
       getQua(item.children);

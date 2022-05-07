@@ -9,7 +9,7 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/index/menu-left/statistics/statistics",
+          "pathName": "pages/index/menu-left/classify/classify",
           "query": "",
           "launchMode": "default",
           "scene": null

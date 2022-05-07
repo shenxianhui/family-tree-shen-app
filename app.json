@@ -9,6 +9,7 @@
 
     "pages/index/menu-left/menu-left",
     "pages/index/menu-left/statistics/statistics",
+    "pages/index/menu-left/classify/classify",
 
     "pages/index/menu-right/menu-right",
     "pages/index/menu-right/content-det/content-det"
@@ -36,6 +37,10 @@
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
     "van-loading": "@vant/weapp/loading/index",
-    "van-dialog": "@vant/weapp/dialog/index"
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-sidebar": "@vant/weapp/sidebar/index",
+    "van-sidebar-item": "@vant/weapp/sidebar-item/index",
+    "van-empty": "@vant/weapp/empty/index"
   }
 }

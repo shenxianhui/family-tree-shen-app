@@ -6,6 +6,11 @@ Page({
         id: 0,
         page: '/pages/index/menu-left/statistics/statistics',
       },
+      {
+        name: '分类',
+        id: 0,
+        page: '/pages/index/menu-left/classify/classify',
+      },
     ],
   },
 

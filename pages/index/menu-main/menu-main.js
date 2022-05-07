@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2022-05-06 16:13:27
+ * @LastEditTime: 2022-05-07 12:06:10
  * @Description: 树形图
  */
 import * as echarts from '../../../ec-canvas/echarts';
@@ -175,7 +175,7 @@ Page({
 
       myChart.on('click', evt => {
         wx.navigateTo({
-          url: '/pages/user-details/user-details',
+          url: '/pages/index/user-details/user-details',
           success: res => {
             res.eventChannel.emit('data', evt.data);
           },
