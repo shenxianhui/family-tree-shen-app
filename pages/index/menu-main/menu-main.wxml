@@ -3,8 +3,8 @@
 	<van-dialog id="van-dialog" use-title-slot use-slot>
 		<view class="dlg-title">提 示</view>
 		<view class="dlg-content">
-			<view>由于申氏家族过于兴旺（数据量太大），当前页可能存在卡顿现象</view>
-			<view>请勿频繁操作（缩放、拖动）</view>
+			<view>由于数据较多, 当前页可能存在卡顿现象, 请勿频繁操作 (缩放、拖动)</view>
+			<!-- <view>请勿频繁操作（缩放、拖动）</view> -->
 		</view>
 	</van-dialog>
 

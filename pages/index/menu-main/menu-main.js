@@ -2,7 +2,7 @@
  * @Author: shenxh
  * @Date: 2021-08-31 09:46:10
  * @LastEditors: shenxh
- * @LastEditTime: 2022-05-07 15:52:41
+ * @LastEditTime: 2022-05-07 20:20:51
  * @Description: 树形图
  */
 import * as echarts from '../../../ec-canvas/echarts';
@@ -115,9 +115,7 @@ Page({
         _this.initChart();
       },
       fail() {
-        Dialog.alert({
-          confirmButtonText: '朕知道了',
-        }).then(() => {
+        Dialog.alert().then(() => {
           wx.setStorage({
             key: 'treeDlg',
             data: '1',
