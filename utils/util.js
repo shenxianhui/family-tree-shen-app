@@ -29,7 +29,7 @@ const formatTreeData = (list, level = 1, parent = null, cb = () => {}) => {
 
   const data = list.map(item => {
     const { info, name } = item;
-    const completeName = name === '女适' && name.length < 4 ? name : '申' + name;
+    const completeName = name === '女士' && name.length < 4 ? name : '申' + name;
     info.trim();
     let userInfo = {
       name: completeName,
