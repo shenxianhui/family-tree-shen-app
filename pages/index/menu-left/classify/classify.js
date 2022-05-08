@@ -5,11 +5,13 @@ let ancestorsData = {};
 
 Page({
   data: {
-    searchLabel: '',
+    loading: false,
     searchVal: '',
     currentSideItem: 0,
     sidebarItemList: [],
     sideContentList: [],
+    pageNo: 1,
+    pageSize: 40,
   },
 
   watch: {},
@@ -19,16 +21,22 @@ Page({
   onLoad(options) {
     this.setTreeData(formatTreeData([ancestors]));
 
-    this.setData({
-      searchLabel: this.data.currentSideItem + 1 + '世',
-      sideContentList: ancestorsData[this.data.currentSideItem + 1],
-      sidebarItemList: Object.keys(ancestorsData).map(item => {
-        return {
-					title: item + '世',
-					total: ancestorsData[item].length
-				};
+    let arr = [
+      ...Object.keys(ancestorsData).map(item => {
+        // 获取全部数据
+        if (!ancestorsData[0]) {
+          ancestorsData[0] = [];
+        }
+        ancestorsData[0].push(...ancestorsData[+item]);
+
+        return item + '世';
       }),
+    ];
+
+    this.setData({
+      sidebarItemList: ['全部', ...arr],
     });
+    this.loadMore();
   },
 
   // 页面出现在前台时执行
@@ -67,9 +75,12 @@ Page({
   // 搜索框输入事件
   changeSearch(e) {
     this.setData({
+      pageNo: 1,
       searchVal: e.detail,
+      currentSideItem: 0,
+      sideContentList: [],
     });
-    this.filterUser();
+    this.loadMore();
   },
 
   // 侧边栏选择事件
@@ -77,26 +88,11 @@ Page({
     const { detail } = evt;
 
     this.setData({
-      searchLabel: detail + 1 + '世',
+      pageNo: 1,
       currentSideItem: detail,
-      // sideContentList: ancestorsData[detail + 1],
+      sideContentList: [],
     });
-    this.filterUser();
-  },
-
-  // 搜索过滤
-  filterUser() {
-    let arr = [];
-
-    ancestorsData[this.data.currentSideItem + 1].forEach(item => {
-      if (item.name.includes(this.data.searchVal)) {
-        arr.push(item);
-      }
-    });
-
-    this.setData({
-      sideContentList: arr,
-    });
+    this.loadMore();
   },
 
   // 设置数据
@@ -113,15 +109,64 @@ Page({
     });
   },
 
-	// 点击头像卡片
-	handleCard(evt) {
+  // 点击头像卡片
+  handleCard(evt) {
     const { data } = evt.currentTarget.dataset;
 
-		wx.navigateTo({
-			url: '/pages/index/user-details/user-details',
-			success: res => {
-				res.eventChannel.emit('data', data);
-			},
-		});
-	}
+    wx.navigateTo({
+      url: '/pages/index/user-details/user-details',
+      success: res => {
+        res.eventChannel.emit('data', data);
+      },
+    });
+  },
+
+  // 滚动到底部
+  scrolLower(evt) {
+    const { sideContentList, pageNo } = this.data;
+    const filterArr = this.filterUser();
+
+    if (sideContentList.length >= filterArr.length) return;
+
+    this.setData({
+      loading: true,
+      pageNo: pageNo + 1,
+    });
+    this.loadMore();
+  },
+
+  // 加载更多
+  loadMore() {
+    const { sideContentList, pageNo, pageSize } = this.data;
+    const filterArr = this.filterUser();
+
+    if (sideContentList.length < filterArr.length) {
+      let oldArr = sideContentList;
+      const sliceArr = filterArr.slice((pageNo - 1) * pageSize, pageNo * pageSize);
+
+      if (!sliceArr.length) return;
+
+      oldArr.push(...sliceArr);
+
+      this.setData({
+        loading: false,
+        sideContentList: oldArr,
+      });
+    } else {
+      this.setData({
+        loading: false,
+      });
+    }
+  },
+
+  // 搜索过滤
+  filterUser() {
+    const { currentSideItem, searchVal } = this.data;
+
+    if (!ancestorsData[currentSideItem]) return [];
+
+    return ancestorsData[currentSideItem].filter(item => {
+      return item.name.includes(searchVal);
+    });
+  },
 });

@@ -2,7 +2,6 @@
 <view class="classify">
 	<van-search
 		value="{{ searchVal }}"
-		label="{{searchLabel}}"
 		placeholder="请输入姓名"
 		bind:change="changeSearch"
 	></van-search>
@@ -18,16 +17,16 @@
 					wx:for="{{sidebarItemList}}"
 					wx:key="index"
 					custom-class="sidebar-item-class"
-					title="{{item.title}}"
+					title="{{item}}"
 				/>
 			</van-sidebar>
 		</view>
 
-		<view class="side-content">
-			<view wx:if="{{!sideContentList.length}}" class="no-side-content">
-				<van-empty image="search" description="搜索内容为空" />
-			</view>
-			<view wx:if="{{sideContentList.length}}" class="side-content-wrap">
+		<view wx:if="{{!sideContentList.length}}" class="no-side-content">
+			<van-empty class="empty" image="search" description="搜索内容为空" />
+		</view>
+		<scroll-view wx:if="{{sideContentList.length}}" scroll-y="true" class="side-content" bindscrolltolower="scrolLower">
+			<view class="side-content-wrap">
 				<view
 					wx:for="{{sideContentList}}"
 					wx:key="index"
@@ -60,6 +59,14 @@
 					<view class="name">{{item.name}}</view>
 				</view>
 			</view>
-		</view>
+			<view class="loading">
+				<van-loading
+					wx:if="{{loading}}"
+					type="spinner"
+					size="50rpx"
+					color="#cccccc"
+				/>
+			</view>
+		</scroll-view>
 	</view>
 </view>
