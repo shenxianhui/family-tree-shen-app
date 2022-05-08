@@ -5,47 +5,56 @@
 }
 
 page {
+  box-sizing: border-box;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 
+view {
+  box-sizing: border-box;
+}
+
 .h1 {
-	display: block;
+  display: block;
   text-align: center;
   font-weight: bold;
+	line-height: 1.5;
   font-size: 58rpx;
-	margin-top: 40rpx;
+  margin-top: 40rpx;
   margin-bottom: 40rpx;
 }
 .h2 {
-	display: block;
+  display: block;
   font-weight: bold;
+	line-height: 1.5;
   font-size: 50rpx;
-	margin-top: 20rpx;
+  margin-top: 20rpx;
   margin-bottom: 20rpx;
 }
 .h3 {
-	display: block;
+  display: block;
   font-weight: bold;
+	line-height: 1.5;
   font-size: 46rpx;
-	margin-top: 20rpx;
+  margin-top: 20rpx;
   margin-bottom: 20rpx;
 }
 .h4 {
-	display: block;
+  display: block;
   font-weight: bold;
+	line-height: 1.5;
   font-size: 42rpx;
-	margin-top: 20rpx;
+  margin-top: 20rpx;
   margin-bottom: 20rpx;
 }
 .p {
-	display: block;
+  display: block;
   line-height: 2;
   font-size: 40rpx;
   text-align: justify;
 }
 .space {
-	display: inline-block;
-	width: 80rpx;
+  display: inline-block;
+  width: 80rpx;
 }
