@@ -19,7 +19,7 @@ const formatNumber = n => {
 /**
  * @description: 族谱数据格式化
  * @param {array} list 人员列表
- * @param {number} level 代数
+ * @param {number} level 世数
  * @param {object} parent 父亲
  * @param {function} cb 回调函数, 返回一个对象来接收其他属性
  * @return {array} 返回一个新的数组
@@ -36,7 +36,7 @@ const formatTreeData = (list, level = 1, parent = null, cb = () => {}) => {
       sex: 1, // 1男 2女
       birthday: null, // 生日
       age: null, // 年龄
-      level, // 代数
+      level, // 世数
       parent, // 父亲
       children: formatTreeData(item.children, level + 1, completeName, cb),
     };

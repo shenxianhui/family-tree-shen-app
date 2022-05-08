@@ -58,7 +58,7 @@ function initChart(canvas, width, height, dpr) {
     },
     xAxis: [
       {
-        name: '代数',
+        name: '世数',
         type: 'category',
         boundaryGap: true,
         axisLine: {
