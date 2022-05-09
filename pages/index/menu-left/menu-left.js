@@ -2,14 +2,14 @@ Page({
   data: {
     list: [
       {
-        name: '统计',
-        id: 0,
-        page: '/pages/index/menu-left/statistics/statistics',
+        name: '筛选',
+        page: '/pages/index/menu-left/classify/classify',
+        icon: 'icon-filter',
       },
       {
-        name: '分类',
-        id: 0,
-        page: '/pages/index/menu-left/classify/classify',
+        name: '统计',
+        page: '/pages/index/menu-left/statistics/statistics',
+        icon: 'icon-statistics',
       },
     ],
   },

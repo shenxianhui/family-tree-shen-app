@@ -1,4 +1,4 @@
-<!-- 分类 -->
+<!-- 筛选 -->
 <view class="classify">
 	<van-search
 		value="{{ searchVal }}"

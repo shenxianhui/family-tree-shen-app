@@ -1,4 +1,5 @@
 /**app.wxss**/
+@import"./assets/font/iconfont.wxss";
 @font-face {
   font-family: 'myFont';
   src: url('https://636c-cloud1-2glsmv54208d242b-1311412316.tcb.qcloud.la/font/LiXuKeShuFa-1.ttf?sign=78d83ef485e87152c3fd7c733e3fdfdc&t=1651297547');
@@ -13,6 +14,10 @@ page {
 
 view {
   box-sizing: border-box;
+}
+
+.iconfont {
+	font-size: 100rpx;
 }
 
 .h1 {

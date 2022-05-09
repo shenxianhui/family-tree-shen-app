@@ -1,11 +1,14 @@
 <view class="menu-left">
-	<view
-		wx:for="{{list}}"
-		wx:for-item="item"
-		wx:for-index="index"
-		wx:key="sourceIdx1"
-		class="button"
-		bindtap="handleBtn"
-		data-data="{{item}}"
-	>{{item.name}}</view>
+	<view class="wrap">
+		<view
+			wx:for="{{list}}"
+			wx:key="index"
+			class="card"
+			bindtap="handleBtn"
+			data-data="{{item}}"
+		>
+			<view class="icon iconfont {{item.icon}}"></view>
+			<view class="name">{{item.name}}</view>
+		</view>
+	</view>
 </view>
