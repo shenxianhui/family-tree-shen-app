@@ -1,5 +1,5 @@
 <view class="course">
-  <view class="course-content">
+  <!-- <view class="course-content">
 		<view
 			wx:for="{{courseData}}"
 			wx:key="index"
@@ -9,5 +9,8 @@
 		>
 			<view class="title">{{item.title}}</view>
 		</view>
+	</view> -->
+	<view class="no-content">
+		<van-empty description="正在开发中, 敬请期待" />
 	</view>
 </view>
