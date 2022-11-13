@@ -35,26 +35,22 @@
 					data-data="{{item}}"
 				>
 					<view class="avatar">
-						<image
+						<view
 							wx:if="{{item.sex === 1 && (!item.age || item.age > 18)}}"
-							class="avatar-man"
-							src="https://636c-cloud1-2glsmv54208d242b-1311412316.tcb.qcloud.la/image/family-tree-shen/avatar_man.png?sign=539073331128fc3d26d7a71caf85431a&t=1651892589"
-						></image>
-						<image
+							class="icon iconfont icon-avatar_man avatar-icon"
+						></view>
+						<view
 							wx:if="{{item.sex === 2 && (!item.age || item.age > 18)}}"
-							class="avatar-woman"
-							src="https://636c-cloud1-2glsmv54208d242b-1311412316.tcb.qcloud.la/image/family-tree-shen/avatar_woman.png?sign=ead062f232646a411cfebcb81eea130f&t=1651892617"
-						></image>
-						<image
+							class="icon iconfont icon-avatar_woman avatar-icon"
+						></view>
+						<view
 							wx:if="{{item.sex === 1 && item.age && item.age <= 18}}"
-							class="avatar-boy"
-							src="https://636c-cloud1-2glsmv54208d242b-1311412316.tcb.qcloud.la/image/family-tree-shen/avatar_boy.png?sign=6dab9e76893368d9eeb5b8a12dfcc344&t=1651892626"
-						></image>
-						<image
+							class="icon iconfont icon-avatar_boy avatar-icon"
+						></view>
+						<view
 							wx:if="{{item.sex === 2 && item.age && item.age <= 18}}"
-							class="avatar-girl"
-							src="https://636c-cloud1-2glsmv54208d242b-1311412316.tcb.qcloud.la/image/family-tree-shen/avatar_girl.png?sign=3f25df222c6e6e8e69245dd457093c5b&t=1651892633"
-						></image>
+							class="icon iconfont icon-avatar_girl avatar-icon"
+						></view>
 					</view>
 					<view class="name">{{item.name}}</view>
 				</view>
