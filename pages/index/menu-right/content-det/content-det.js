@@ -64,8 +64,8 @@ Page({
   handlePreviewImage(evt) {
     const { data } = evt.currentTarget.dataset;
 
-    wx.previewImage({
-      urls: [data.image],
-    });
+    // wx.previewImage({
+    //   urls: [data.image],
+    // });
   },
 });

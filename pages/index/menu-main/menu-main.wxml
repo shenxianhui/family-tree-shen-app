@@ -20,10 +20,10 @@
 	</view>
 
 	<text class="back" bindtap="handleBack">返回</text>
-	<image
+	<!-- <image
 		class="bg"
     mode="aspectFill"
 		src="https://636c-cloud1-2glsmv54208d242b-1311412316.tcb.qcloud.la/image/family-tree-shen/read_bg.jpg?sign=b7f1a072fecb9edd7fc707b709fa2b57&t=1651913488"
-	></image>
+	></image> -->
   <ec-canvas wx:if="{{showChartTree}}" id="chart-tree" canvas-id="chart-tree" ec="{{ ec }}"></ec-canvas>
 </view>
